@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="91fc5bfc-7c8f-4cd9-88d7-b3e0543f4050" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="CardCollection.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Cards/CardCollection.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1483627592485" expanded="true" signature="6:70" ph="..." />
+                <marker date="1483627592485" expanded="true" signature="6:100" ph="..." />
+                <marker date="1483627592485" expanded="true" signature="140:242" ph="/// Represents a collection of game cards derived from List&lt;int/&gt; ... " />
+                <marker date="1483627592485" expanded="true" signature="303:2280" ph="{...}" />
+                <marker date="1483627592485" expanded="false" signature="411:499" ph="/// Construct an empty CardBase collection. ... " />
+                <marker date="1483627592485" expanded="false" signature="531:551" ph="{...}" />
+                <marker date="1483627592485" expanded="false" signature="561:675" ph="/// Construct a new collection containing any number of card indices. ... " />
+                <marker date="1483627592485" expanded="false" signature="752:811" ph="{...}" />
+                <marker date="1483627592485" expanded="false" signature="821:939" ph="/// Construct a new collection containing any number of CardBase objects. ... " />
+                <marker date="1483627592485" expanded="false" signature="1021:1200" ph="{...}" />
+                <marker date="1483627592485" expanded="false" signature="1276:1381" ph="{...}" />
+                <marker date="1483627592485" expanded="false" signature="1420:1516" ph="{...}" />
+                <marker date="1483627592485" expanded="false" signature="1545:1609" ph="{...}" />
+                <marker date="1483627592485" expanded="false" signature="1675:1925" ph="{...}" />
+                <marker date="1483627592485" expanded="true" signature="1701:1807" ph="{...}" />
+                <marker date="1483627592485" expanded="true" signature="1839:1915" ph="{...}" />
+                <marker date="1483627592485" expanded="false" signature="2008:2274" ph="{...}" />
+                <marker date="1483627592485" expanded="true" signature="2034:2156" ph="{...}" />
+                <marker date="1483627592485" expanded="true" signature="2188:2264" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Structs.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Cards/Structs.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <marker date="1483627683301" expanded="true" signature="6:52" ph="..." />
+                <marker date="1483627683301" expanded="true" signature="85:683" ph="{...}" />
+                <marker date="1483627683301" expanded="true" signature="92:175" ph="/// Struct containing display data for a card. ... " />
+                <marker date="1483627683301" expanded="true" signature="268:681" ph="{...}" />
+                <marker date="1483627683301" expanded="false" signature="302:346" ph="{...}" />
+                <marker date="1483627683301" expanded="false" signature="376:422" ph="{...}" />
+                <marker date="1483627683301" expanded="false" signature="591:675" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ICardDisplayInformation.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICardDisplayInformation.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding>
+                <marker date="1483627838880" expanded="true" signature="56:331" ph="{...}" />
+                <marker date="1483627838880" expanded="true" signature="103:329" ph="{...}" />
+                <marker date="1483627838880" expanded="false" signature="118:185" ph="/// Card display name. ... " />
+                <marker date="1483627838880" expanded="false" signature="224:293" ph="/// Card display colour. ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllCommand.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Commands/AllCommand.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1483627001821" expanded="true" signature="6:25" ph="..." />
+                <marker date="1483627001821" expanded="true" signature="6:82" ph="..." />
+                <marker date="1483627001821" expanded="true" signature="125:263" ph="/// Container Command that returns all constituent commands as a collection wrapped in Promise.All(). ... " />
+                <marker date="1483627001821" expanded="true" signature="369:1504" ph="{...}" />
+                <marker date="1483627001821" expanded="true" signature="448:603" ph="/* 'Child' commands of the returned clone also need to be cloned and initialised. ... */" />
+                <marker date="1483627001821" expanded="true" signature="666:903" ph="{...}" />
+                <marker date="1483627001821" expanded="true" signature="913:1125" ph="/// Determine whether this command should be permanent based on constituent commands. ... " />
+                <marker date="1483627001821" expanded="true" signature="1162:1242" ph="{...}" />
+                <marker date="1483627001821" expanded="true" signature="1286:1373" ph="{...}" />
+                <marker date="1483627001821" expanded="true" signature="1414:1498" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScriptableCommand.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Commands/ScriptableCommand.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+              <folding>
+                <marker date="1483627131376" expanded="true" signature="6:63" ph="..." />
+                <marker date="1483627131376" expanded="true" signature="106:203" ph="/// Represents the ICommand interface in a storeable format. ... " />
+                <marker date="1483627131376" expanded="true" signature="302:1015" ph="{...}" />
+                <marker date="1483627131376" expanded="true" signature="382:433" ph="{...}" />
+                <marker date="1483627131376" expanded="true" signature="682:753" ph="{...}" />
+                <marker date="1483627131376" expanded="true" signature="763:867" ph="/// Initialise this command with the supplied configuration ... " />
+                <marker date="1483627131376" expanded="true" signature="930:1009" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ICommand.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICommand.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <marker date="1483627257946" expanded="false" signature="55:144" ph="/// Contract to implement Execute and Undo promises. ... " />
+                <marker date="1483627257946" expanded="true" signature="174:734" ph="{...}" />
+                <marker date="1483627257946" expanded="false" signature="189:290" ph="/// Returns the command's implementation as an IPromise. ... " />
+                <marker date="1483627257946" expanded="false" signature="327:436" ph="/// Returns the command's reverse implementation as an IPromise. ... " />
+                <marker date="1483627257946" expanded="false" signature="470:554" ph="/// Returns an instance of the command. ... " />
+                <marker date="1483627257946" expanded="false" signature="611:694" ph="/// Is the command impossible to Undo? ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardBase.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Cards/CardBase.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1483627454998" expanded="true" signature="6:84" ph="..." />
+                <marker date="1483627454998" expanded="true" signature="117:803" ph="{...}" />
+                <marker date="1483627454998" expanded="true" signature="124:197" ph="/// Base class for all card objects. ... " />
+                <marker date="1483627454998" expanded="true" signature="322:801" ph="{...}" />
+                <marker date="1483627454998" expanded="false" signature="618:716" ph="{...}" />
+                <marker date="1483627454998" expanded="true" signature="618:796" ph="{...}" />
+                <marker date="1483627454998" expanded="false" signature="749:795" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ICard.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICard.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding>
+                <marker date="1483627349504" expanded="true" signature="95:482" ph="{...}" />
+                <marker date="1483627349504" expanded="false" signature="110:273" ph="/// Returns this card's display information. ... " />
+                <marker date="1483627349504" expanded="false" signature="337:443" ph="/// Returns this card's effect as an ICommand implementation. ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ICardCollection.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICardCollection.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+              <folding>
+                <marker date="1483627606466" expanded="true" signature="6:62" ph="..." />
+                <marker date="1483627606466" expanded="true" signature="6:101" ph="..." />
+                <marker date="1483627606466" expanded="false" signature="107:313" ph="/// Interface defining methods for manipulating collections of cards. ... " />
+                <marker date="1483627606466" expanded="true" signature="363:1256" ph="{...}" />
+                <marker date="1483627606466" expanded="false" signature="378:477" ph="/// Return true if this collection has no cards in it. ... " />
+                <marker date="1483627606466" expanded="false" signature="517:625" ph="/// Return the display info of the ith card in this collection. ... " />
+                <marker date="1483627606466" expanded="false" signature="704:816" ph="/// Return the command attached to the ith card in this collection. ... " />
+                <marker date="1483627606466" expanded="false" signature="858:977" ph="/// Move the ith card of this collection to the end of another collection. ... " />
+                <marker date="1483627606466" expanded="false" signature="1046:1174" ph="/// Move the ith card of this collection to a specific index in another collection. ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Interfaces/ICardGamePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Model/Player/NetworkPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Model/Player/CardCollection.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Interfaces/ICardCollection.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/SuperClasses/PromiseObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/CrHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Interfaces/ICommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Effects/DiscardEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/SuperClasses/EffectBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Effects/DebugEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/SuperClasses/ScriptableObjectT.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/Command.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Testing/CardTester.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/TCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/CardCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Extensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Editor/CardTesterEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/DebugCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/ScriptableCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/DiscardCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/ICommandHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Controller/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/View/ButtonView.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Model/Cards/CardCollection.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Model/Cards/ICardCollection.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/CommandStack.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/DiscardCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/DebugCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Model/Cards/CardBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/ICommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/ScriptableCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/AllCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/DrawCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Model/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICardGamePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Commands/Structs.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Commands/Structs.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICommandConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/View/CardView.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Singleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Model/Player/Structs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CardGamePackage/Cards/Structs.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Commands/AllCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Commands/ScriptableCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICard.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Cards/CardBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Cards/CardCollection.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICardCollection.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Cards/Structs.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICardDisplayInformation.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1849" />
+    <option name="height" value="1102" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>General</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SoloAdventurer (1 project)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_Scripts" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SoloAdventurer (1 project)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="card&#9;null&#9;null" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RunManager" selected=".NET Project.Unity">
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="ConnectRemote" factoryName="Mono remote" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <method />
+    </configuration>
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Unity" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91fc5bfc-7c8f-4cd9-88d7-b3e0543f4050" name="Default" comment="" />
+      <created>1483079955490</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1483079955490</updated>
+      <workItem from="1483079957894" duration="3584000" />
+      <workItem from="1483148407265" duration="2079000" />
+      <workItem from="1483150566251" duration="11759000" />
+      <workItem from="1483233251736" duration="25327000" />
+      <workItem from="1483353065173" duration="4894000" />
+      <workItem from="1483411810871" duration="1188000" />
+      <workItem from="1483420569675" duration="1367000" />
+      <workItem from="1483422020288" duration="1324000" />
+      <workItem from="1483423659354" duration="11351000" />
+      <workItem from="1483514235514" duration="5301000" />
+      <workItem from="1483529683912" duration="12376000" />
+      <workItem from="1483613904723" duration="4283000" />
+      <workItem from="1483627833924" duration="447000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="85280000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="1849" height="1102" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5019157" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24904214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors in solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3301282" sideWeight="0.4969896" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3301282" sideWeight="0.5030104" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UnitTesting" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24904214" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors in solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UnitTesting" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5019157" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24904214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290735" sideWeight="0.49808428" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24904214" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/1C0389F6-D955-493F-B702-C64D3CD6B097/2b/e0a46188/Collection`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="366" column="15" lean-forward="false" selection-start-line="366" selection-start-column="15" selection-end-line="366" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/1C0389F6-D955-493F-B702-C64D3CD6B097/a1/bd350d06/ICollection.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/1C0389F6-D955-493F-B702-C64D3CD6B097/7d/f0a9f0c6/IList`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/F9E3D39F-4AB4-4FE4-B99E-B71C48F96E6F/36/145c5dd8/Vector3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="104" column="4" lean-forward="false" selection-start-line="104" selection-start-column="4" selection-end-line="110" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/60BB0439-E67D-4462-9F5A-D7E2B57B57E0/56/f91cb9b9/Stack`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/F9E3D39F-4AB4-4FE4-B99E-B71C48F96E6F/f5/f9313a1a/Object.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/SuperClasses/CollectionView.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Interfaces/IViewable.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Model/Player/NetworkPlayer.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Model/Cards/IntToCardAdaptor.cs" />
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/3B9B9C72-DD1F-414C-8631-85DF08F87677/f2/c8134840/IPromise.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/3B9B9C72-DD1F-414C-8631-85DF08F87677/1f/99b36548/IPromise`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/3B9B9C72-DD1F-414C-8631-85DF08F87677/6e/a93e4b6e/Promise`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/3B9B9C72-DD1F-414C-8631-85DF08F87677/1f/b397f6df/Promise.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3504">
+          <caret line="146" column="16" lean-forward="false" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/SuperClasses/PromiseObject.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Effects/DiscardEffect.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/SuperClasses/EffectBase.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Effects/DebugEffect.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Commands/TCommand.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Commands/Command.cs" />
+    <entry file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/v08/DecompilerCache/decompiler/1C0389F6-D955-493F-B702-C64D3CD6B097/82/ab6f410d/Stack.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Testing/CardTester.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Editor/CardTesterEditor.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Interfaces/ICommand.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Commands/CardCommand.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/View/ButtonView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="12" column="48" lean-forward="false" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Controller/Game.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Interfaces/ICommand.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Interfaces/ICardGamePlayer.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Commands/CommandStack.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Commands/DrawCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Commands/DiscardCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Commands/DebugCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICardGamePlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICommandConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Commands/Structs.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/View/CardView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="58" column="9" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Extensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Commands/CrHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Model/Player/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Model/Player/Structs.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Singleton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Commands/AllCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1483627001821" expanded="true" signature="6:25" ph="..." />
+            <marker date="1483627001821" expanded="true" signature="6:82" ph="..." />
+            <marker date="1483627001821" expanded="true" signature="125:263" ph="/// Container Command that returns all constituent commands as a collection wrapped in Promise.All(). ... " />
+            <marker date="1483627001821" expanded="true" signature="369:1504" ph="{...}" />
+            <marker date="1483627001821" expanded="true" signature="448:603" ph="/* 'Child' commands of the returned clone also need to be cloned and initialised. ... */" />
+            <marker date="1483627001821" expanded="true" signature="666:903" ph="{...}" />
+            <marker date="1483627001821" expanded="true" signature="913:1125" ph="/// Determine whether this command should be permanent based on constituent commands. ... " />
+            <marker date="1483627001821" expanded="true" signature="1162:1242" ph="{...}" />
+            <marker date="1483627001821" expanded="true" signature="1286:1373" ph="{...}" />
+            <marker date="1483627001821" expanded="true" signature="1414:1498" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Commands/ScriptableCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding>
+            <marker date="1483627131376" expanded="true" signature="6:63" ph="..." />
+            <marker date="1483627131376" expanded="true" signature="106:203" ph="/// Represents the ICommand interface in a storeable format. ... " />
+            <marker date="1483627131376" expanded="true" signature="302:1015" ph="{...}" />
+            <marker date="1483627131376" expanded="true" signature="382:433" ph="{...}" />
+            <marker date="1483627131376" expanded="true" signature="682:753" ph="{...}" />
+            <marker date="1483627131376" expanded="true" signature="763:867" ph="/// Initialise this command with the supplied configuration ... " />
+            <marker date="1483627131376" expanded="true" signature="930:1009" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <marker date="1483627257946" expanded="false" signature="55:144" ph="/// Contract to implement Execute and Undo promises. ... " />
+            <marker date="1483627257946" expanded="true" signature="174:734" ph="{...}" />
+            <marker date="1483627257946" expanded="false" signature="189:290" ph="/// Returns the command's implementation as an IPromise. ... " />
+            <marker date="1483627257946" expanded="false" signature="327:436" ph="/// Returns the command's reverse implementation as an IPromise. ... " />
+            <marker date="1483627257946" expanded="false" signature="470:554" ph="/// Returns an instance of the command. ... " />
+            <marker date="1483627257946" expanded="false" signature="611:694" ph="/// Is the command impossible to Undo? ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICard.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <marker date="1483627349504" expanded="true" signature="95:482" ph="{...}" />
+            <marker date="1483627349504" expanded="false" signature="110:273" ph="/// Returns this card's display information. ... " />
+            <marker date="1483627349504" expanded="false" signature="337:443" ph="/// Returns this card's effect as an ICommand implementation. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICardCollection.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <marker date="1483627606466" expanded="true" signature="6:62" ph="..." />
+            <marker date="1483627606466" expanded="true" signature="6:101" ph="..." />
+            <marker date="1483627606466" expanded="false" signature="107:313" ph="/// Interface defining methods for manipulating collections of cards. ... " />
+            <marker date="1483627606466" expanded="true" signature="363:1256" ph="{...}" />
+            <marker date="1483627606466" expanded="false" signature="378:477" ph="/// Return true if this collection has no cards in it. ... " />
+            <marker date="1483627606466" expanded="false" signature="517:625" ph="/// Return the display info of the ith card in this collection. ... " />
+            <marker date="1483627606466" expanded="false" signature="704:816" ph="/// Return the command attached to the ith card in this collection. ... " />
+            <marker date="1483627606466" expanded="false" signature="858:977" ph="/// Move the ith card of this collection to the end of another collection. ... " />
+            <marker date="1483627606466" expanded="false" signature="1046:1174" ph="/// Move the ith card of this collection to a specific index in another collection. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Cards/CardBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1483627454998" expanded="true" signature="6:84" ph="..." />
+            <marker date="1483627454998" expanded="true" signature="117:803" ph="{...}" />
+            <marker date="1483627454998" expanded="true" signature="124:197" ph="/// Base class for all card objects. ... " />
+            <marker date="1483627454998" expanded="true" signature="322:801" ph="{...}" />
+            <marker date="1483627454998" expanded="false" signature="618:716" ph="{...}" />
+            <marker date="1483627454998" expanded="true" signature="618:796" ph="{...}" />
+            <marker date="1483627454998" expanded="false" signature="749:795" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Cards/CardCollection.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1483627592485" expanded="true" signature="6:70" ph="..." />
+            <marker date="1483627592485" expanded="true" signature="6:100" ph="..." />
+            <marker date="1483627592485" expanded="true" signature="140:242" ph="/// Represents a collection of game cards derived from List&lt;int/&gt; ... " />
+            <marker date="1483627592485" expanded="true" signature="303:2280" ph="{...}" />
+            <marker date="1483627592485" expanded="false" signature="411:499" ph="/// Construct an empty CardBase collection. ... " />
+            <marker date="1483627592485" expanded="false" signature="531:551" ph="{...}" />
+            <marker date="1483627592485" expanded="false" signature="561:675" ph="/// Construct a new collection containing any number of card indices. ... " />
+            <marker date="1483627592485" expanded="false" signature="752:811" ph="{...}" />
+            <marker date="1483627592485" expanded="false" signature="821:939" ph="/// Construct a new collection containing any number of CardBase objects. ... " />
+            <marker date="1483627592485" expanded="false" signature="1021:1200" ph="{...}" />
+            <marker date="1483627592485" expanded="false" signature="1276:1381" ph="{...}" />
+            <marker date="1483627592485" expanded="false" signature="1420:1516" ph="{...}" />
+            <marker date="1483627592485" expanded="false" signature="1545:1609" ph="{...}" />
+            <marker date="1483627592485" expanded="false" signature="1675:1925" ph="{...}" />
+            <marker date="1483627592485" expanded="true" signature="1701:1807" ph="{...}" />
+            <marker date="1483627592485" expanded="true" signature="1839:1915" ph="{...}" />
+            <marker date="1483627592485" expanded="false" signature="2008:2274" ph="{...}" />
+            <marker date="1483627592485" expanded="true" signature="2034:2156" ph="{...}" />
+            <marker date="1483627592485" expanded="true" signature="2188:2264" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Cards/Structs.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1483627683301" expanded="true" signature="6:52" ph="..." />
+            <marker date="1483627683301" expanded="true" signature="85:683" ph="{...}" />
+            <marker date="1483627683301" expanded="true" signature="92:175" ph="/// Struct containing display data for a card. ... " />
+            <marker date="1483627683301" expanded="true" signature="268:681" ph="{...}" />
+            <marker date="1483627683301" expanded="false" signature="302:346" ph="{...}" />
+            <marker date="1483627683301" expanded="false" signature="376:422" ph="{...}" />
+            <marker date="1483627683301" expanded="false" signature="591:675" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CardGamePackage/Interfaces/ICardDisplayInformation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <marker date="1483627838880" expanded="true" signature="56:331" ph="{...}" />
+            <marker date="1483627838880" expanded="true" signature="103:329" ph="{...}" />
+            <marker date="1483627838880" expanded="false" signature="118:185" ph="/// Card display name. ... " />
+            <marker date="1483627838880" expanded="false" signature="224:293" ph="/// Card display colour. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
