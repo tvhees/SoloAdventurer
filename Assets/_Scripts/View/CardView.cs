@@ -12,19 +12,26 @@ namespace View
     {
         [SerializeField] private bool isHidden;
         private ICardCollection collection;
-        private ICardGamePlayer owner;
+        private IPlayer owner;
         private Button[] buttons;
         private Image[] images;
         private Text[] textPanels;
 
-        #region MonoBehaviour
-
-        protected virtual void Start()
+        private void Start()
         {
             buttons = GetComponentsInChildren<Button>();
             images = GetComponentsInChildren<Image>();
             textPanels = GetComponentsInChildren<Text>();
             AssignButtonListeners();
+        }
+
+        /// <summary>
+        /// Pass reference to list of items that will be displayed
+        /// </summary>
+        public void SetCollection(ICardCollection collection, IPlayer owner)
+        {
+            this.collection = collection;
+            this.owner = owner;
         }
 
         private void Update()
@@ -34,8 +41,6 @@ namespace View
                 UpdateButtonView(i);
             }
         }
-
-        #endregion MonoBehaviour
 
         /// <summary>
         /// Assign listener action for each button attached as a child of this object.
@@ -59,15 +64,6 @@ namespace View
         }
 
         /// <summary>
-        /// Pass reference to list of items that will be displayed
-        /// </summary>
-        public virtual void SetCollection(ICardCollection collection, ICardGamePlayer owner)
-        {
-            this.collection = collection;
-            this.owner = owner;
-        }
-
-        /// <summary>
         /// Display a button if it corresponds to a non-null item, deactivate it otherwise.
         /// </summary>
         private void UpdateButtonView(int i)
@@ -81,7 +77,7 @@ namespace View
         /// <summary>
         /// Activate a button and display an item's name on it.
         /// </summary>
-        protected virtual void DisplayItem(int i)
+        private void DisplayItem(int i)
         {
             buttons[i].gameObject.SetActive(true);
             buttons[i].interactable = !this.isHidden;

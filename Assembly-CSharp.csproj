@@ -58,18 +58,23 @@
      <Compile Include="Assets\CardGamePackage\Interfaces\ICard.cs" />
      <Compile Include="Assets\CardGamePackage\Interfaces\ICardCollection.cs" />
      <Compile Include="Assets\CardGamePackage\Interfaces\ICardDisplayInformation.cs" />
-     <Compile Include="Assets\CardGamePackage\Interfaces\ICardGamePlayer.cs" />
      <Compile Include="Assets\CardGamePackage\Interfaces\ICommand.cs" />
      <Compile Include="Assets\CardGamePackage\Interfaces\ICommandConfig.cs" />
+     <Compile Include="Assets\CardGamePackage\Interfaces\IPlayer.cs" />
      <Compile Include="Assets\CardGamePackage\Singleton.cs" />
+     <Compile Include="Assets\_Scripts\Commands\AddMovementCommand.cs" />
+     <Compile Include="Assets\_Scripts\Commands\AdventurerCommand.cs" />
      <Compile Include="Assets\_Scripts\Commands\DiscardCommand.cs" />
      <Compile Include="Assets\_Scripts\Commands\DrawCommand.cs" />
+     <Compile Include="Assets\_Scripts\Commands\IAdventurerCommand.cs" />
      <Compile Include="Assets\_Scripts\Controller\Game.cs" />
      <Compile Include="Assets\_Scripts\Extensions.cs" />
+     <Compile Include="Assets\_Scripts\Model\Player\IAdventurerPlayer.cs" />
      <Compile Include="Assets\_Scripts\Model\Player\Player.cs" />
      <Compile Include="Assets\_Scripts\Model\Player\Structs.cs" />
      <Compile Include="Assets\_Scripts\View\ButtonView.cs" />
      <Compile Include="Assets\_Scripts\View\CardView.cs" />
+     <Compile Include="Assets\_Scripts\View\PlayerView.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -93,12 +98,12 @@
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
   </Target>
   -->
-
+  
 </Project>

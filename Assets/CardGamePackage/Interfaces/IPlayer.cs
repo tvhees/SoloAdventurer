@@ -1,9 +1,11 @@
+using Model.Player;
+
 namespace CardGamePackage.Interfaces
 {
     /// <summary>
     /// Interface defining methods for manipulating Player instances in turn-based card games.
     /// </summary>
-    public interface ICardGamePlayer
+    public interface IPlayer
     {
         /// <summary>
         /// The player's hand of cards.
@@ -17,6 +19,7 @@ namespace CardGamePackage.Interfaces
         /// The player's discard pile.
         /// </summary>
         ICardCollection Discard { get; }
+
         /// <summary>
         /// Set player attributes for a new turn.
         /// </summary>
@@ -29,5 +32,17 @@ namespace CardGamePackage.Interfaces
         /// Move multiple cards from the player's deck to their hand.
         /// </summary>
         void Draw(int numberOfCards);
+        /// <summary>
+        /// Draw cards from deck to hand up to a specified hand size limit.
+        /// </summary>
+        void DrawUpTo(int sizeLimit);
+        /// <summary>
+        /// Clean up player attributes at end of turn.
+        /// </summary>
+        void EndTurn();
+        /// <summary>
+        /// Helper function used to link other interfaces of command and player objects.
+        /// </summary>
+        void DecorateCommand(ICommand command);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using CardGamePackage.Cards;
 using CardGamePackage.Interfaces;
+using Commands;
 using UnityEngine;
 
 namespace Model.Player
@@ -7,10 +8,8 @@ namespace Model.Player
     /// <summary>
     /// Object representing a single game player.
     /// </summary>
-    public class Player : ICardGamePlayer
+    public partial class Player : IPlayer
     {
-        private Reputation reputation;
-        private Movement movement;
         private const int StartingHandSize = 5;
 
         public ICardCollection Hand { get; private set; }
@@ -22,41 +21,78 @@ namespace Model.Player
         /// </summary>
         public Player()
         {
-            this.reputation = Reputation.Zero;
-            this.movement = Movement.Zero;
+            this.Rep = Reputation.Zero;
             this.Deck = new CardCollection(shuffle: true, collection: Resources.LoadAll<CardBase>("Cards"));
             this.Hand = new CardCollection();
             this.Discard = new CardCollection();
-            Draw(StartingHandSize);
+            DrawUpTo(StartingHandSize);
         }
 
-        #region ICardGamePlayer
-
-        /// <summary>
-        /// Set player properties for a new turn.
-        /// </summary>
         public void StartTurn()
         {
-            movement = Movement.Zero;
+            Movement = 0;
         }
 
-        /// <summary>
-        /// Draw the top card of the player's deck to hand.
-        /// </summary>
+        public void EndTurn()
+        {
+            DrawUpTo(HandSize);
+        }
+
         public void Draw()
         {
-            Deck.MoveCardTo(Hand, Deck.Count-1);
+            Deck.MoveCardTo(Hand, Deck.Count - 1);
         }
 
-        /// <summary>
-        /// Draw the first n cards of the player's deck to hand.
-        /// </summary>
         public void Draw(int numberOfCards)
         {
             for (var i = 0; i < numberOfCards; i++)
                 Draw();
         }
 
-        #endregion ICardGamePlayer
+        public void DrawUpTo(int sizeLimit)
+        {
+            Draw(sizeLimit - Hand.Count);
+        }
+
+        public void DecorateCommand(ICommand command)
+        {
+            ((IAdventurerCommand)command).AdventurerPlayer = this;
+        }
+    }
+
+    public partial class Player : IAdventurerPlayer
+    {
+        public Reputation Rep { get; private set; }
+        public int Movement { get; private set; }
+        public int Influence { get; private set; }
+        public int Attack { get; private set; }
+        public int Block { get; private set; }
+        public int Defense { get; private set; }
+        public int HandSize { get; private set; }
+
+        public void AddMovement(int value)
+        {
+            Movement += value;
+        }
+
+        public void AddAttack(int value)
+        {
+            Attack += value;
+        }
+
+        public void AddBlock(int value)
+        {
+            Block += value;
+        }
+
+        public void AddInfluence(int value)
+        {
+            Influence += value;
+        }
+
+        public void AddReputation(int value)
+        {
+            Rep = new Reputation(Rep.Value + value);
+        }
     }
 }

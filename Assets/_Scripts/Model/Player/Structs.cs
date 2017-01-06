@@ -2,24 +2,6 @@
 
 namespace Model.Player
 {
-
-    /// <summary>
-    /// Player movement value.
-    /// </summary>
-    public struct Movement
-    {
-        public int Value { get; private set; }
-        public static Movement Zero
-        {
-            get { return new Movement(0); }
-        }
-
-        public Movement(int value) : this()
-        {
-            this.Value = value;
-        }
-    }
-
     /// <summary>
     /// Player reputation value and matching bonus/penalty to influence.
     /// </summary>

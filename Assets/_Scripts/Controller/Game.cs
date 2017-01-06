@@ -11,10 +11,11 @@ namespace Controller
     /// </summary>
     public class Game : MonoBehaviour
     {
-        private ICardGamePlayer player;
+        private Player player;
         [SerializeField] private CardView deckView;
         [SerializeField] private CardView handView;
         [SerializeField] private CardView discardView;
+        [SerializeField] private PlayerView playerView;
 
         public List<ScriptableObject> Stack;
 
@@ -32,6 +33,7 @@ namespace Controller
             deckView.SetCollection(player.Deck, player);
             handView.SetCollection(player.Hand, player);
             discardView.SetCollection(player.Discard, player);
+            playerView.SetPlayer(player);
         }
     }
 }
