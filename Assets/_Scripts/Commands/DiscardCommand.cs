@@ -14,13 +14,13 @@ namespace Commands
         public override IPromise Execute()
         {
             return new Promise((resolved, rejected)
-                => CrHelper.Instance.StartCoroutine(ExecCoroutine()));
+                => CrHelper.Run(ExecCoroutine()));
         }
 
         public override IPromise Undo()
         {
             return new Promise((resolved, rejected)
-                => CrHelper.Instance.StartCoroutine(UndoCoroutine()));
+                => CrHelper.Run(UndoCoroutine()));
         }
 
         private IEnumerator ExecCoroutine()
