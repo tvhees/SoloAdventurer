@@ -27,7 +27,7 @@ namespace Model.Player
             this.Deck = new CardCollection(shuffle: true, collection: Resources.LoadAll<CardBase>("Cards"));
             this.Hand = new CardCollection();
             this.Discard = new CardCollection();
-            DrawMultiple(StartingHandSize);
+            Draw(StartingHandSize);
         }
 
         #region ICardGamePlayer
@@ -51,9 +51,9 @@ namespace Model.Player
         /// <summary>
         /// Draw the first n cards of the player's deck to hand.
         /// </summary>
-        public void DrawMultiple(int n)
+        public void Draw(int numberOfCards)
         {
-            for (var i = 0; i < n; i++)
+            for (var i = 0; i < numberOfCards; i++)
                 Draw();
         }
 

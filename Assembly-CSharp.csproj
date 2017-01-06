@@ -46,22 +46,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Scripts\CardGamePackage\Cards\CardBase.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Cards\CardCollection.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Cards\Structs.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Commands\AllCommand.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Commands\CommandStack.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Commands\CrHelper.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Commands\DebugCommand.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Commands\ScriptableCommand.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Commands\Structs.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Interfaces\ICard.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Interfaces\ICardCollection.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Interfaces\ICardDisplayInformation.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Interfaces\ICardGamePlayer.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Interfaces\ICommand.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Interfaces\ICommandConfig.cs" />
-     <Compile Include="Assets\_Scripts\CardGamePackage\Singleton.cs" />
+     <Compile Include="Assets\CardGamePackage\Cards\CardBase.cs" />
+     <Compile Include="Assets\CardGamePackage\Cards\CardCollection.cs" />
+     <Compile Include="Assets\CardGamePackage\Cards\Structs.cs" />
+     <Compile Include="Assets\CardGamePackage\Commands\AllCommand.cs" />
+     <Compile Include="Assets\CardGamePackage\Commands\CommandStack.cs" />
+     <Compile Include="Assets\CardGamePackage\Commands\CrHelper.cs" />
+     <Compile Include="Assets\CardGamePackage\Commands\DebugCommand.cs" />
+     <Compile Include="Assets\CardGamePackage\Commands\ScriptableCommand.cs" />
+     <Compile Include="Assets\CardGamePackage\Commands\Structs.cs" />
+     <Compile Include="Assets\CardGamePackage\Interfaces\ICard.cs" />
+     <Compile Include="Assets\CardGamePackage\Interfaces\ICardCollection.cs" />
+     <Compile Include="Assets\CardGamePackage\Interfaces\ICardDisplayInformation.cs" />
+     <Compile Include="Assets\CardGamePackage\Interfaces\ICardGamePlayer.cs" />
+     <Compile Include="Assets\CardGamePackage\Interfaces\ICommand.cs" />
+     <Compile Include="Assets\CardGamePackage\Interfaces\ICommandConfig.cs" />
+     <Compile Include="Assets\CardGamePackage\Singleton.cs" />
      <Compile Include="Assets\_Scripts\Commands\DiscardCommand.cs" />
      <Compile Include="Assets\_Scripts\Commands\DrawCommand.cs" />
      <Compile Include="Assets\_Scripts\Controller\Game.cs" />
@@ -93,12 +93,12 @@
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
   </Target>
   -->
-  
+
 </Project>
