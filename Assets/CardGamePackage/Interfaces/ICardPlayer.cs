@@ -5,12 +5,16 @@ namespace CardGamePackage.Interfaces
     /// <summary>
     /// Interface defining methods for manipulating Player instances in turn-based card games.
     /// </summary>
-    public interface IPlayer
+    public interface ICardPlayer
     {
         /// <summary>
         /// The player's hand of cards.
         /// </summary>
         ICardCollection Hand { get; }
+        /// <summary>
+        /// Area for cards played by player.
+        /// </summary>
+        ICardCollection Play { get; }
         /// <summary>
         /// The player's deck of cards.
         /// </summary>

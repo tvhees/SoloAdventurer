@@ -13,6 +13,6 @@ namespace CardGamePackage.Interfaces
         /// <summary>
         /// The player that triggered the command.
         /// </summary>
-        IPlayer Player { get; }
+        ICardPlayer Player { get; }
     }
 }

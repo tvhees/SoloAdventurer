@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using JetBrains.Annotations;
+using RSG;
+using Random = UnityEngine.Random;
 
 public static class Extension {
 
@@ -45,5 +48,10 @@ public static class Extension {
     public static bool IsEmpty(this ICollection param)
     {
         return param.Count == 0;
+    }
+
+    public static Func<IPromise> AsFunc(this IPromise promise)
+    {
+        return () => promise;
     }
 }

@@ -12,12 +12,12 @@ namespace Commands
 
         public override IPromise Execute()
         {
-            return new Promise((resolve, reject) => AdventurerPlayer.AddMovement(value));
+            return new Promise((resolve, reject) => Adventurer.Movement.Add(value));
         }
 
         public override IPromise Undo()
         {
-            return new Promise((resolve, reject) => AdventurerPlayer.AddMovement(-value));
+            return new Promise((resolve, reject) => Adventurer.Movement.Add(-value));
         }
     }
 }

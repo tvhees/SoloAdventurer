@@ -11,9 +11,10 @@ namespace Controller
     /// </summary>
     public class Game : MonoBehaviour
     {
-        private Player player;
+        [SerializeField] private Adventurer adventurer;
         [SerializeField] private CardView deckView;
         [SerializeField] private CardView handView;
+        [SerializeField] private CardView playView;
         [SerializeField] private CardView discardView;
         [SerializeField] private PlayerView playerView;
 
@@ -29,11 +30,12 @@ namespace Controller
         /// </summary>
         private void CreatePlayer()
         {
-            player = new Player();
-            deckView.SetCollection(player.Deck, player);
-            handView.SetCollection(player.Hand, player);
-            discardView.SetCollection(player.Discard, player);
-            playerView.SetPlayer(player);
+            adventurer.Initialise();
+            deckView.SetCollection(adventurer.Deck, adventurer);
+            handView.SetCollection(adventurer.Hand, adventurer);
+            playView.SetCollection(adventurer.Play, adventurer);
+            discardView.SetCollection(adventurer.Discard, adventurer);
+            playerView.SetPlayer(adventurer);
         }
     }
 }

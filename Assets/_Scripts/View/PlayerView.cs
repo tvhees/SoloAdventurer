@@ -7,14 +7,14 @@ namespace View
     public class PlayerView : MonoBehaviour
     {
         private Text[] textPanels;
-        private IAdventurerPlayer player;
+        private IAdventurer player;
 
         private void Start()
         {
             textPanels = GetComponentsInChildren<Text>();
         }
 
-        public void SetPlayer(IAdventurerPlayer player)
+        public void SetPlayer(IAdventurer player)
         {
             this.player = player;
         }
@@ -28,10 +28,10 @@ namespace View
         {
             var strings = new[]
             {
-                "Movement", player.Movement.ToString(),
-                "Influence", player.Influence.ToString(),
-                "Attack", player.Attack.ToString(),
-                "Block", player.Block.ToString()
+                "Movement", player.Movement.Value.ToString(),
+                "Influence", player.Influence.Value.ToString(),
+                "Attack", player.Attack.Value.ToString(),
+                "Block", player.Block.Value.ToString()
             };
 
             for (var i = 0; i < strings.Length; i++)

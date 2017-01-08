@@ -9,13 +9,13 @@ namespace CardGamePackage.Commands
     {
         public ICardCollection Source { get { return source; } }
         public int SourceIndex { get { return sourceIndex; } }
-        public IPlayer Player { get { return player; } }
+        public ICardPlayer Player { get { return player; } }
 
         private readonly ICardCollection source;
         private readonly int sourceIndex;
-        private readonly IPlayer player;
+        private readonly ICardPlayer player;
 
-        public CommandConfig(ICardCollection source, int sourceIndex, IPlayer player)
+        public CommandConfig(ICardCollection source, int sourceIndex, ICardPlayer player)
         {
             this.source = source;
             this.sourceIndex = sourceIndex;

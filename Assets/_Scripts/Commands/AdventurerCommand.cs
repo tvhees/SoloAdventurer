@@ -7,7 +7,7 @@ namespace Commands
 {
     public abstract class AdventurerCommand : ScriptableCommand, IAdventurerCommand
     {
-        public IAdventurerPlayer AdventurerPlayer { get; set; }
+        public IAdventurer Adventurer { get; set; }
 
         protected override ICommand Init(ICommandConfig config)
         {

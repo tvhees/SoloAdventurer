@@ -11,13 +11,13 @@ namespace View
     public class CardView : MonoBehaviour
     {
         [SerializeField] private bool isHidden;
-        private ICardCollection collection;
-        private IPlayer owner;
+        protected ICardCollection Collection;
+        protected ICardPlayer Owner;
         private Button[] buttons;
         private Image[] images;
         private Text[] textPanels;
 
-        private void Start()
+        protected virtual void Start()
         {
             buttons = GetComponentsInChildren<Button>();
             images = GetComponentsInChildren<Image>();
@@ -28,10 +28,10 @@ namespace View
         /// <summary>
         /// Pass reference to list of items that will be displayed
         /// </summary>
-        public void SetCollection(ICardCollection collection, IPlayer owner)
+        public void SetCollection(ICardCollection collection, ICardPlayer owner)
         {
-            this.collection = collection;
-            this.owner = owner;
+            this.Collection = collection;
+            this.Owner = owner;
         }
 
         private void Update()
@@ -49,7 +49,7 @@ namespace View
         {
             for (var i = 0; i < buttons.Length; i++)
             {
-                var config = new CommandConfig(collection, i, owner);
+                var config = new CommandConfig(Collection, i, Owner);
                 buttons[i].onClick.AddListener(() => ExecuteEffect(config));
             }
         }
@@ -59,7 +59,7 @@ namespace View
         /// </summary>
         private void ExecuteEffect(ICommandConfig config)
         {
-            var effect = collection.Effect(config.SourceIndex);
+            var effect = Collection.Effect(config.SourceIndex);
             CommandStack.Execute(effect.Create(config));
         }
 
@@ -68,7 +68,7 @@ namespace View
         /// </summary>
         private void UpdateButtonView(int i)
         {
-            if (i < collection.Count)
+            if (i < Collection.Count)
                 DisplayItem(i);
             else
                 buttons[i].gameObject.SetActive(false);
@@ -81,7 +81,7 @@ namespace View
         {
             buttons[i].gameObject.SetActive(true);
             buttons[i].interactable = !this.isHidden;
-            var info = collection.GetInfo(i, this.isHidden);
+            var info = Collection.GetInfo(i, this.isHidden);
             images[i].color = info.Colour;
             textPanels[i].text = info.Name;
         }

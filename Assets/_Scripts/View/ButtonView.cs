@@ -20,5 +20,10 @@ namespace View
         {
             CommandStack.Undo();
         }
+
+        public void EndTurn()
+        {
+
+        }
     }
 }
