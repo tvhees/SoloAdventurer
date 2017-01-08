@@ -84,8 +84,13 @@
      <Compile Include="Assets\_Scripts\Model\Player\Movement.cs" />
      <Compile Include="Assets\_Scripts\Model\Player\Reputation.cs" />
      <Compile Include="Assets\_Scripts\Model\Player\Structs.cs" />
-     <Compile Include="Assets\_Scripts\View\ButtonView.cs" />
      <Compile Include="Assets\_Scripts\View\CardView.cs" />
+     <Compile Include="Assets\_Scripts\View\ChoiceView.cs" />
+     <Compile Include="Assets\_Scripts\View\ComponentTypes\ButtonView.cs" />
+     <Compile Include="Assets\_Scripts\View\ComponentTypes\ImageView.cs" />
+     <Compile Include="Assets\_Scripts\View\ComponentTypes\TextView.cs" />
+     <Compile Include="Assets\_Scripts\View\ComponentTypes\ViewType.cs" />
+     <Compile Include="Assets\_Scripts\View\InputView.cs" />
      <Compile Include="Assets\_Scripts\View\PlayView.cs" />
      <Compile Include="Assets\_Scripts\View\PlayerView.cs" />
  <Reference Include="UnityEngine.UI">

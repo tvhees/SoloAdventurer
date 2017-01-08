@@ -1,7 +1,10 @@
+using System;
 using CardGamePackage.Commands;
 using CardGamePackage.Interfaces;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
+using View.ComponentTypes;
 
 namespace View
 {
@@ -13,16 +16,42 @@ namespace View
         [SerializeField] private bool isHidden;
         protected ICardCollection Collection;
         protected ICardPlayer Owner;
-        private Button[] buttons;
-        private Image[] images;
-        private Text[] textPanels;
+        [SerializeField] private ViewType<Button> buttons;
+        [SerializeField] private ViewType<Image> images;
+        [SerializeField] private ViewType<Text> texts;
+
+        private void Awake()
+        {
+            buttons = gameObject.AddComponent<ButtonView>();
+            images = gameObject.AddComponent<ImageView>();
+            texts = gameObject.AddComponent<TextView>();
+        }
 
         protected virtual void Start()
         {
-            buttons = GetComponentsInChildren<Button>();
-            images = GetComponentsInChildren<Image>();
-            textPanels = GetComponentsInChildren<Text>();
-            AssignButtonListeners();
+            buttons.DoEach(AssignListener());
+        }
+
+        /// <summary>
+        /// Make a button event trigger execution of the corresponding Card's command.
+        /// </summary>
+        /// <returns></returns>
+        private Action<Button, int> AssignListener()
+        {
+            return (button, i) =>
+            {
+                var config = new CommandConfig(Collection, i, Owner);
+                button.onClick.AddListener(() => ExecuteEffect(config));
+            };
+        }
+
+        /// <summary>
+        /// Listener action that pushes card effects to the stack.
+        /// </summary>
+        private void ExecuteEffect(ICommandConfig config)
+        {
+            var effect = Collection.Effect(config.SourceIndex);
+            CommandStack.Execute(effect.Create(config));
         }
 
         /// <summary>
@@ -36,54 +65,20 @@ namespace View
 
         private void Update()
         {
-            for (var i = 0; i < buttons.Length; i++)
-            {
-                UpdateButtonView(i);
-            }
-        }
-
-        /// <summary>
-        /// Assign listener action for each button attached as a child of this object.
-        /// </summary>
-        private void AssignButtonListeners()
-        {
-            for (var i = 0; i < buttons.Length; i++)
-            {
-                var config = new CommandConfig(Collection, i, Owner);
-                buttons[i].onClick.AddListener(() => ExecuteEffect(config));
-            }
-        }
-
-        /// <summary>
-        /// Listener action that pushes card effects to the stack.
-        /// </summary>
-        private void ExecuteEffect(ICommandConfig config)
-        {
-            var effect = Collection.Effect(config.SourceIndex);
-            CommandStack.Execute(effect.Create(config));
-        }
-
-        /// <summary>
-        /// Display a button if it corresponds to a non-null item, deactivate it otherwise.
-        /// </summary>
-        private void UpdateButtonView(int i)
-        {
-            if (i < Collection.Count)
-                DisplayItem(i);
-            else
-                buttons[i].gameObject.SetActive(false);
-        }
-
-        /// <summary>
-        /// Activate a button and display an item's name on it.
-        /// </summary>
-        private void DisplayItem(int i)
-        {
-            buttons[i].gameObject.SetActive(true);
-            buttons[i].interactable = !this.isHidden;
-            var info = Collection.GetInfo(i, this.isHidden);
-            images[i].color = info.Colour;
-            textPanels[i].text = info.Name;
+            var size = Collection.Count;
+            buttons.UpdateView(size, (but) => but.interactable = !this.isHidden);
+            images.UpdateView(size,
+                (img, i) =>
+                {
+                    if (i >= size) return;
+                    img.color = Collection.GetInfo(i, this.isHidden).Colour;
+                });
+            texts.UpdateView(size,
+                (txt, i) =>
+                {
+                    if (i >= size) return;
+                    txt.text = Collection.GetInfo(i, this.isHidden).Name;
+                });
         }
     }
 }

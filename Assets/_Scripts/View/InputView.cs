@@ -7,7 +7,7 @@ namespace View
     /// <summary>
     /// Class for displaying and listening to Unity UI buttons.
     /// </summary>
-    public class ButtonView : MonoBehaviour
+    public class InputView : MonoBehaviour
     {
         public Button UndoButton;
 
