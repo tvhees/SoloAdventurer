@@ -52,12 +52,14 @@
      <Compile Include="Assets\CardGamePackage\Commands\AllCommand.cs" />
      <Compile Include="Assets\CardGamePackage\Commands\ChoiceCommand.cs" />
      <Compile Include="Assets\CardGamePackage\Commands\CommandStack.cs" />
-     <Compile Include="Assets\CardGamePackage\Commands\CrHelper.cs" />
      <Compile Include="Assets\CardGamePackage\Commands\DebugCommand.cs" />
+     <Compile Include="Assets\CardGamePackage\Commands\EndTurnCommand.cs" />
+     <Compile Include="Assets\CardGamePackage\Commands\Helper.cs" />
      <Compile Include="Assets\CardGamePackage\Commands\ScriptableCommand.cs" />
      <Compile Include="Assets\CardGamePackage\Commands\ScriptableMultiCommand.cs" />
      <Compile Include="Assets\CardGamePackage\Commands\SequenceCommand.cs" />
      <Compile Include="Assets\CardGamePackage\Commands\Structs.cs" />
+     <Compile Include="Assets\CardGamePackage\Commands\UndoCommand.cs" />
      <Compile Include="Assets\CardGamePackage\Interfaces\ICard.cs" />
      <Compile Include="Assets\CardGamePackage\Interfaces\ICardCollection.cs" />
      <Compile Include="Assets\CardGamePackage\Interfaces\ICardDisplayInformation.cs" />

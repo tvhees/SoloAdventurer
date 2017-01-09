@@ -23,5 +23,7 @@ namespace CardGamePackage.Interfaces
         /// Is the command impossible to Undo?
         /// </summary>
         bool IsPermanent { get; }
+
+        bool IsBypassingStack { get; }
     }
 }

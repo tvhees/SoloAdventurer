@@ -14,5 +14,6 @@ namespace Model.Player
         IResource Block { get; }
         IResource Defense { get; }
         IResource HandSize { get; }
+        string[] Resources { get; }
     }
 }

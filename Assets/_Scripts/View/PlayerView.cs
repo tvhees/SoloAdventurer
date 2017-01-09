@@ -1,17 +1,22 @@
 ﻿using Model.Player;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
+using View.ComponentTypes;
 
 namespace View
 {
     public class PlayerView : MonoBehaviour
     {
-        private Text[] textPanels;
         private IAdventurer player;
+        private ViewType<Text> texts;
+        private UnityAction<Text, int> textUpdate;
+        private string[] playerResources;
 
-        private void Start()
+        private void Awake()
         {
-            textPanels = GetComponentsInChildren<Text>();
+            texts = gameObject.AddComponent<TextView>();
+            textUpdate = (txt, i) => { txt.text = playerResources[i]; };
         }
 
         public void SetPlayer(IAdventurer player)
@@ -21,25 +26,8 @@ namespace View
 
         private void Update()
         {
-            UpdateText();
-        }
-
-        private void UpdateText()
-        {
-            var strings = new[]
-            {
-                "Movement", player.Movement.Value.ToString(),
-                "Influence", player.Influence.Value.ToString(),
-                "Attack", player.Attack.Value.ToString(),
-                "Block", player.Block.Value.ToString()
-            };
-
-            for (var i = 0; i < strings.Length; i++)
-            {
-                if (i >= textPanels.Length)
-                    break;
-                textPanels[i].text = strings[i];
-            }
+            playerResources = player.Resources;
+            texts.UpdateView(playerResources.Length, textUpdate);
         }
     }
 }

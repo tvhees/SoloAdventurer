@@ -23,7 +23,6 @@ namespace CardGamePackage.Interfaces
         /// The player's discard pile.
         /// </summary>
         ICardCollection Discard { get; }
-
         /// <summary>
         /// Set player attributes for a new turn.
         /// </summary>

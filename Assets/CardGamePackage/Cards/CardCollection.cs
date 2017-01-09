@@ -58,15 +58,10 @@ namespace CardGamePackage.Cards
 
         public void MoveCardTo(ICardCollection other, int index)
         {
-            try
-            {
-                other.Add(this[index]);
-                this.RemoveAt(index);
-            }
-            catch (Exception e)
-            {
-                throw new Exception(e.Message);
-            }
+            if (this.IsEmpty) return;
+
+            other.Add(this[index]);
+            this.RemoveAt(index);
         }
 
         public void MoveCardTo(ICardCollection other, int index, int insertIndex)

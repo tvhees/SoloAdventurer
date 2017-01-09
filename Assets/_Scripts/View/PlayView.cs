@@ -14,13 +14,15 @@ namespace View
         {
             base.Start();
             discardCommand = Resources.Load<DiscardCommand>("Commands/Discard");
+            Helper.OnTurnEnded.AddListener(DiscardAll);
         }
 
-        public void EndTurn()
+        private void DiscardAll()
         {
-            var config = new CommandConfig(Collection, 0, Owner);
-            for (var i = 0; i < Collection.Count; i++)
+            Debug.Log(Collection.Count);
+            for (var i = Collection.Count - 1; i >= 0; i--)
             {
+                var config = new CommandConfig(Collection, i, Owner);
                 CommandStack.Execute(discardCommand.Create(config));
             }
         }

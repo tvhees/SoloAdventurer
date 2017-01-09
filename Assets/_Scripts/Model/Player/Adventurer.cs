@@ -1,4 +1,5 @@
 ﻿using CardGamePackage.Cards;
+using CardGamePackage.Commands;
 using CardGamePackage.Interfaces;
 using Commands;
 using UnityEngine;
@@ -11,6 +12,8 @@ namespace Model.Player
     /// </summary>
     public class Adventurer : MonoBehaviour, IAdventurer
     {
+        [SerializeField] private string cardLoadPath;
+
         public ICardCollection Hand { get; private set; }
         public ICardCollection Play { get; private set; }
         public ICardCollection Deck { get; private set; }
@@ -24,6 +27,20 @@ namespace Model.Player
         public IResource Defense { get; private set; }
         public IResource HandSize { get; private set; }
 
+        public string[] Resources
+        {
+            get
+            {
+                return new[]
+                {
+                    "Movement", Movement.Value.ToString(),
+                    "Influence", Influence.Value.ToString(),
+                    "Attack", Attack.Value.ToString(),
+                    "Block", Block.Value.ToString()
+                };
+            }
+        }
+
         /// <summary>
         /// Set up player for a new game
         /// </summary>
@@ -36,7 +53,7 @@ namespace Model.Player
 
         private void CreateDecks()
         {
-            var cards = Resources.LoadAll<CardBase>("Cards");
+            var cards = UnityEngine.Resources.LoadAll<CardBase>(cardLoadPath);
             this.Deck = new CardCollection(shuffle: true, collection: cards);
             this.Hand = new CardCollection();
             this.Play = new CardCollection();

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using CardGamePackage.Commands;
 using CardGamePackage.Interfaces;
 using Model.Player;
 using UnityEngine;
@@ -17,11 +18,13 @@ namespace Controller
         [SerializeField] private CardView playView;
         [SerializeField] private CardView discardView;
         [SerializeField] private PlayerView playerView;
+        [SerializeField] private InputView inputView;
 
         public List<ScriptableObject> Stack;
 
         private void Awake()
         {
+            Helper.OnTurnEnded.AddListener(EndTurn);
             CreatePlayer();
         }
 
@@ -36,6 +39,12 @@ namespace Controller
             playView.SetCollection(adventurer.Play, adventurer);
             discardView.SetCollection(adventurer.Discard, adventurer);
             playerView.SetPlayer(adventurer);
+            inputView.SetPlayer(adventurer);
+        }
+
+        private void EndTurn()
+        {
+            adventurer.EndTurn();
         }
     }
 }

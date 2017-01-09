@@ -1,5 +1,7 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 namespace View.ComponentTypes
 {
@@ -12,7 +14,7 @@ namespace View.ComponentTypes
             Elements = GetComponentsInChildren<T>();
         }
 
-        public void DoEach(Action<T> doAction)
+        public void DoEach(UnityAction<T> doAction)
         {
             foreach (var t in Elements)
             {
@@ -20,7 +22,7 @@ namespace View.ComponentTypes
             }
         }
 
-        public void DoEach(Action<T, int> doAction)
+        public void DoEach(UnityAction<T, int> doAction)
         {
             for (var i = 0; i < Elements.Length; i++)
             {
@@ -37,25 +39,27 @@ namespace View.ComponentTypes
             }
         }
 
-        public void UpdateView(int collectionSize, Action<T> updateAction)
+        public void UpdateView(int collectionSize, UnityAction<T> updateAction)
         {
             for (var i = 0; i < Elements.Length; i++)
             {
                 var isOn = i < collectionSize;
                 var element = Elements[i];
                 Elements[i].gameObject.SetActive(isOn);
-                updateAction.Invoke(element);
+                if(isOn)
+                    updateAction.Invoke(element);
             }
         }
 
-        public void UpdateView(int collectionSize, Action<T, int> updateAction)
+        public void UpdateView(int collectionSize, UnityAction<T, int> updateAction)
         {
             for (var i = 0; i < Elements.Length; i++)
             {
                 var isOn = i < collectionSize;
                 var element = Elements[i];
                 Elements[i].gameObject.SetActive(isOn);
-                updateAction.Invoke(element, i);
+                if(isOn)
+                    updateAction.Invoke(element, i);
             }
         }
     }

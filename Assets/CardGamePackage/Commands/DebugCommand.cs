@@ -13,13 +13,13 @@ namespace CardGamePackage.Commands
         public override IPromise Execute()
         {
             return new Promise((resolve, reject)
-                => CrHelper.Run(ExecCoroutine()));
+                => Helper.Run(ExecCoroutine()));
         }
 
         public override IPromise Undo()
         {
             return new Promise((resolve, reject)
-                => CrHelper.Run(UndoCoroutine()));
+                => Helper.Run(UndoCoroutine()));
         }
 
         private IEnumerator ExecCoroutine()

@@ -10,18 +10,26 @@ namespace CardGamePackage.Commands
     [System.Serializable]
     public abstract class ScriptableCommand : ScriptableObject, ICommand
     {
+        public enum UndoTypes { Undoable, Permanent, BypassStack }
+
         protected ICommandConfig Config;
+
+        [SerializeField] public UndoTypes UndoType;
         public bool IsPermanent {
-            get { return isPermanent; }
+            get { return UndoType == UndoTypes.Permanent; }
         }
-        [SerializeField] protected bool isPermanent;
+        public bool IsBypassingStack {
+            get { return UndoType == UndoTypes.BypassStack; }
+        }
+
         [SerializeField] protected float Delay;
         public abstract IPromise Execute();
         public abstract IPromise Undo();
 
         public virtual ICommand Create(ICommandConfig config)
         {
-            return Instantiate(this).Init(config);
+            var command = IsBypassingStack ? this : Instantiate(this);
+            return command.Init(config);
         }
 
         /// <summary>
