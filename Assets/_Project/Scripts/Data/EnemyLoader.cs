@@ -8,8 +8,9 @@ public class EnemyLoader : XmlLoader<EnemyCollection>
 {
   public EnemyDataEvent OnLoad = new EnemyDataEvent();
 
-  public void InstantiateAllEntries()
+  void Awake ()
   {
+    LoadData();
     OnLoad.Invoke(LoadedData);
   }
 }

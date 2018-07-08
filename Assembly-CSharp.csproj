@@ -53,10 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Project\Scripts\Data\CardLoader.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\DataSpecifications.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\EnemyLoader.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\TileLoader.cs" />
-     <Compile Include="Assets\_Project\Scripts\Models\CardLoader.cs" />
      <Compile Include="Assets\_Project\Scripts\Models\Collection.cs" />
      <Compile Include="Assets\_Project\Scripts\Models\ItemId.cs" />
      <Compile Include="Assets\_Project\Scripts\Views\CollectionUi.cs" />
@@ -131,7 +131,7 @@
      <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\Streaming Assets\enemies.xml" />
+     <None Include="Assets\StreamingAssets\enemies.xml" />
      <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -140,13 +140,13 @@
      <None Include="Assets\Third Party\TextMesh Pro\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\Streaming Assets\tiles.xml" />
+     <None Include="Assets\StreamingAssets\tiles.xml" />
      <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\Third Party\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Third Party\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\Third Party\TextMesh Pro\Fonts\Bangers - OFL.txt" />
-     <None Include="Assets\Streaming Assets\cards.xml" />
+     <None Include="Assets\StreamingAssets\cards.xml" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

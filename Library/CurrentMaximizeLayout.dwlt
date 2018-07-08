@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 713, y: 492}
-  m_MaxSize: {x: 18008, y: 14042}
+  m_MinSize: {x: 713, y: 471}
+  m_MaxSize: {x: 18008, y: 14021}
   vertical: 0
-  controlID: 7912
+  controlID: 148
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 7829
+  controlID: 51
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -106038
+  m_LastSelectedObjectID: -141936
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -678,8 +678,8 @@ MonoBehaviour:
     y: 290
     width: 885
     height: 481
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -705,10 +705,10 @@ MonoBehaviour:
     y: 0
     width: 298
     height: 771
-  m_MinSize: {x: 234, y: 492}
-  m_MaxSize: {x: 10004, y: 14042}
+  m_MinSize: {x: 234, y: 471}
+  m_MaxSize: {x: 10004, y: 14021}
   vertical: 1
-  controlID: 7913
+  controlID: 96
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -761,9 +761,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 800f0000
-    m_LastClickedID: 3968
-    m_ExpandedIDs: da32ffff0e5bffff3ccfffffe2fbffff00000000
+    m_SelectedIDs: 9a100000
+    m_LastClickedID: 4250
+    m_ExpandedIDs: f0fbffff00000000a8100000d2100000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -849,20 +849,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Core/Variables
+    - Assets/_Project/Scripts/Data
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Core/Variables
+  - Assets/_Project/Scripts/Data
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Torbjorn\Documents\Jam games\SoloAdventurer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d00c0000
-    m_LastClickedID: 3280
-    m_ExpandedIDs: 00000000420c00004e0c0000fa0c0000000d0000420d0000440d0000240e0000760e0000323000003430000036300000383000003a3000004c30000000ca9a3bffffff7f
+    m_SelectedIDs: f40e0000
+    m_LastClickedID: 3828
+    m_ExpandedIDs: 00000000720c0000820c00004a0d0000520d0000aa0d0000480e0000b40e0000200f000044100000923100009431000096310000983100009a31000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -890,7 +890,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000420c00004e0c0000fa0c0000000d0000420d0000440d0000240e0000760e0000323000003430000036300000383000003a3000004c30000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000720c0000820c00004a0d0000520d0000aa0d0000480e0000b40e0000200f000044100000923100009431000096310000983100009a310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -915,24 +915,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 800f0000
-    m_LastClickedInstanceID: 3968
+    m_SelectedInstanceIDs: 9a100000
+    m_LastClickedInstanceID: 4250
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: de1d0000e21b0000e01b00004e2d0000001d0000fc1b00002c1d0000201d0000361d0000a81f0000fe040000341d00002e20000066a1ffffa430ffff5cfcfcff36d1ffff5063ffff24050000ba1d0000b81d000090e2ffffb41e00002e050000622400008e2f00000e1d00004c1e0000c8200000f0200000ac16feff0efdfdff200400005c050000022100005a20000012a9feff4e1c00003e51feff441c000084220000601c00005e1c0000da0400006e1c00008a220000a41d00002675f0ff1e75f0ffb27cedffbac90200c81e00008c1c0000ca1e0000f4780000d81e0000901c0000d41e0000ee040000ae1c0000fe1c0000f00400007ca0faff6a200000821d00008c1e0000fa1f00001a1d000002200000042000000a20000000000000602c0000542c00005a2c000070c4fdffa22900006e220000a80400005c5effffec5b0000ac040000d03b00007a02ffffcc290000ac2a00006e080000560e0000be240000de230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Streaming Assets
+      m_OriginalName: Streaming Assets
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 12712
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 14}
     m_CreateAssetUtility:
@@ -963,8 +963,8 @@ MonoBehaviour:
     y: 0
     width: 353
     height: 771
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}

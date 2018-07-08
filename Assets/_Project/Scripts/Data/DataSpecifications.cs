@@ -9,13 +9,14 @@ using System.Xml.Serialization;
 [System.Serializable]
 public class CardCollection : XmlData<CardCollection>
 {
+  [XmlArray("Cards"), XmlArrayItem("Card")]
   public List<CardData> Cards = new List<CardData>();
 }
 
 [System.Serializable]
 public class CardData
 {
-  [XmlAttribute("Id")]
+  [XmlAttribute("id")]
   public string Id;
 }
 
@@ -26,13 +27,14 @@ public class CardData
 [System.Serializable]
 public class TileCollection : XmlData<TileCollection>
 {
+  [XmlArray("Tiles"), XmlArrayItem("Tile")]
   public List<TileData> Tiles = new List<TileData>();
 }
 
 [System.Serializable]
 public class TileData
 {
-  [XmlAttribute("Id")]
+  [XmlAttribute("id")]
   public string Id;
 }
 
@@ -43,12 +45,13 @@ public class TileData
 [System.Serializable]
 public class EnemyCollection : XmlData<EnemyCollection>
 {
-  public List<EnemyData> Enemys = new List<EnemyData>();
+  [XmlArray("Enemies"), XmlArrayItem("Enemy")]
+  public List<EnemyData> Enemies = new List<EnemyData>();
 }
 
 [System.Serializable]
 public class EnemyData
 {
-  [XmlAttribute("Id")]
+  [XmlAttribute("id")]
   public string Id;
 }

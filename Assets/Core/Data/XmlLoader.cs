@@ -12,7 +12,26 @@ namespace Core.Data
 		public void LoadData()
 		{
 			var xmlPath = System.IO.Path.Combine(Application.streamingAssetsPath, File + ".xml");
-			LoadedData = XmlData<T>.Load(xmlPath);
+			try
+			{
+				LoadedData = XmlData<T>.Load(xmlPath);		
+			}
+			catch(DirectoryNotFoundException e)
+			{
+				if (xmlPath.Contains("StreamingAssets"))
+				{
+					Debug.LogErrorFormat("{0} Check that the Assets\\StreamingAssets folder exists and is correctly named.\n{1}",
+						e.Message, e.StackTrace);
+				}
+				else
+				{
+					throw;
+				}
+			}
+			catch (System.Exception)
+			{
+				throw;
+			}
 		}
 	}
 

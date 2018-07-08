@@ -8,8 +8,9 @@ public class TileLoader : XmlLoader<TileCollection>
 {
   public TileDataEvent OnLoad = new TileDataEvent();
 
-  public void InstantiateAllEntries()
+  void Awake ()
   {
+    LoadData();
     OnLoad.Invoke(LoadedData);
   }
 }
