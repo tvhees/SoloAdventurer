@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 */
 [XmlRoot("CardCollection")]
 [System.Serializable]
-public class CardCollection : XmlData<CardCollection>
+public class CardCollection : XmlData
 {
   [XmlArray("Cards"), XmlArrayItem("Card")]
   public List<CardData> Cards = new List<CardData>();
@@ -25,7 +25,7 @@ public class CardData
 */
 [XmlRoot("TileCollection")]
 [System.Serializable]
-public class TileCollection : XmlData<TileCollection>
+public class TileCollection : XmlData
 {
   [XmlArray("Tiles"), XmlArrayItem("Tile")]
   public List<TileData> Tiles = new List<TileData>();
@@ -43,7 +43,7 @@ public class TileData
 */
 [XmlRoot("EnemyCollection")]
 [System.Serializable]
-public class EnemyCollection : XmlData<EnemyCollection>
+public class EnemyCollection : XmlData
 {
   [XmlArray("Enemies"), XmlArrayItem("Enemy")]
   public List<EnemyData> Enemies = new List<EnemyData>();

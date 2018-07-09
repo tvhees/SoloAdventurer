@@ -1,10 +1,11 @@
 using System.IO;
 using System.Xml.Serialization;
 using UnityEngine;
+using RSG.Promises;
 
 namespace Core.Data
 {
-	public abstract class XmlLoader<T> : MonoBehaviour where T : XmlData<T>
+	public abstract class XmlLoader<T> : MonoBehaviour where T : XmlData
 	{
 		public string File;
 		public T LoadedData;
@@ -14,7 +15,7 @@ namespace Core.Data
 			var xmlPath = System.IO.Path.Combine(Application.streamingAssetsPath, File + ".xml");
 			try
 			{
-				LoadedData = XmlData<T>.Load(xmlPath);		
+				LoadedData = XmlData.Load<T>(xmlPath);		
 			}
 			catch(DirectoryNotFoundException e)
 			{
@@ -36,8 +37,8 @@ namespace Core.Data
 	}
 
 	[System.Serializable]
-	public abstract class XmlData<T> where T : class {
-		public void Save(string path)
+	public abstract class XmlData {
+		public void Save<T>(string path) where T : class
 		{
 			var serializer = new XmlSerializer(typeof(T));
 			using(var stream = new FileStream(path, FileMode.Create))
@@ -46,7 +47,7 @@ namespace Core.Data
 			}
 		}
 	
-		public static T Load(string path)
+		public static T Load<T>(string path) where T : class
 		{
 			var serializer = new XmlSerializer(typeof(T));
 			using(var stream = new FileStream(path, FileMode.Open))
