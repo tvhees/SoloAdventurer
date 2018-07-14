@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -107,10 +107,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 713, y: 492}
-  m_MaxSize: {x: 18008, y: 14042}
+  m_MinSize: {x: 713, y: 471}
+  m_MaxSize: {x: 18008, y: 14021}
   vertical: 0
-  controlID: 135
+  controlID: 125
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 136
+  controlID: 31
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,10 +209,10 @@ MonoBehaviour:
     y: 0
     width: 298
     height: 771
-  m_MinSize: {x: 234, y: 492}
-  m_MaxSize: {x: 10004, y: 14042}
+  m_MinSize: {x: 234, y: 471}
+  m_MaxSize: {x: 10004, y: 14021}
   vertical: 1
-  controlID: 37
+  controlID: 53
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,8 +231,8 @@ MonoBehaviour:
     y: 0
     width: 298
     height: 405
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -390,14 +390,14 @@ MonoBehaviour:
     height: 269
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 18954.327545460248
+  lastFramingTime: 38666.99733034667
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 0, y: -3.5, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 0, y: -3.5, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -429,9 +429,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 4.125
     speed: 2
-    m_Value: 10
+    m_Value: 4.125
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 4268
+  m_LastSelectedObjectID: -172104
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -898,9 +898,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4a100000
-    m_LastClickedID: 0
-    m_ExpandedIDs: f0fbffff00000000
+    m_SelectedIDs: 349bfdff
+    m_LastClickedID: -156876
+    m_ExpandedIDs: 7269fcffbe84feff00f4feff44aaffff10dafffff0fbffff00000000ac100000c0100000c8100000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -961,20 +961,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/_Project
+    - Assets/_Project/Scripts/Views
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/_Project
+  - Assets/_Project/Scripts/Views
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Torbjorn\Documents\Jam games\SoloAdventurer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4a100000
-    m_LastClickedID: 4170
-    m_ExpandedIDs: 00000000720c0000820c0000520d0000aa0d0000480e0000b60e0000220f00004a100000983100009a3100009c3100009e310000a0310000a231000000ca9a3bffffff7f
+    m_SelectedIDs: 980e0000
+    m_LastClickedID: 3736
+    m_ExpandedIDs: 00000000720c0000820c0000520d0000aa0d0000480e0000b60e0000220f00004a100000823100008431000086310000883100008a3100008c31000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1002,7 +1002,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000720c0000820c0000520d0000aa0d0000480e0000b60e0000220f00004a100000983100009a3100009c3100009e310000a0310000a2310000
+    m_ExpandedIDs: 00000000720c0000820c0000520d0000aa0d0000480e0000b60e0000220f00004a100000823100008431000086310000883100008a3100008c310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

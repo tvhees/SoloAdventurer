@@ -1,16 +1,21 @@
 using UnityEngine.Events;
 using Core.Data;
+using UnityEngine;
 
-[System.Serializable]
-public class CardDataEvent : UnityEvent<CardCollection> {}
+namespace SA._Data {
+  [System.Serializable]
+  public class CardDataEvent : UnityEvent<CardCollection> {}
 
-public class CardLoader : XmlLoader<CardCollection>
-{
-  public CardDataEvent OnLoad = new CardDataEvent();
-
-  void Awake ()
+  public class CardLoader : MonoBehaviour
   {
-    LoadData();
-    OnLoad.Invoke(LoadedData);
+    public string File;
+
+    public CardDataEvent OnLoad = new CardDataEvent();
+
+    void Awake ()
+    {
+      var data = CardCollection.LoadStreamingAssets(File);
+      OnLoad.Invoke(data);
+    }
   }
 }

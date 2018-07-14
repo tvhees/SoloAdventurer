@@ -53,14 +53,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Project\Scripts\Containers\Container.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\CardLoader.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\DataSpecifications.cs" />
-     <Compile Include="Assets\_Project\Scripts\Data\EnemyLoader.cs" />
-     <Compile Include="Assets\_Project\Scripts\Data\TileLoader.cs" />
-     <Compile Include="Assets\_Project\Scripts\Models\Collection.cs" />
-     <Compile Include="Assets\_Project\Scripts\Models\ItemId.cs" />
-     <Compile Include="Assets\_Project\Scripts\Views\CollectionUi.cs" />
-     <Compile Include="Assets\_Project\Scripts\Views\ItemUi.cs" />
+     <Compile Include="Assets\_Project\Scripts\Data\PlayerLoader.cs" />
+     <Compile Include="Assets\_Project\Scripts\Models\PlayerModel.cs" />
+     <Compile Include="Assets\_Project\Scripts\Systems\CommandQueue.cs" />
+     <Compile Include="Assets\_Project\Scripts\Systems\CommandSystem.cs" />
+     <Compile Include="Assets\_Project\Scripts\Views\PlayerView.cs" />
      <Compile Include="Assets\Core\Components\KeyDownEventTrigger.cs" />
      <Compile Include="Assets\Core\Components\LifecycleEventTrigger.cs" />
      <Compile Include="Assets\Core\Components\SceneLoader.cs" />
@@ -75,7 +75,7 @@
      <Compile Include="Assets\Core\Data\IDataSaver.cs" />
      <Compile Include="Assets\Core\Data\IDataStore.cs" />
      <Compile Include="Assets\Core\Data\JsonSaver.cs" />
-     <Compile Include="Assets\Core\Data\XmlLoader.cs" />
+     <Compile Include="Assets\Core\Data\XmlData.cs" />
      <Compile Include="Assets\Core\Events\BaseEvent.cs" />
      <Compile Include="Assets\Core\Events\GameEvent.cs" />
      <Compile Include="Assets\Core\Events\GameEventListener.cs" />
@@ -147,6 +147,7 @@
      <None Include="Assets\Third Party\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\Third Party\TextMesh Pro\Fonts\Bangers - OFL.txt" />
      <None Include="Assets\StreamingAssets\cards.xml" />
+     <None Include="Assets\StreamingAssets\player.xml" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

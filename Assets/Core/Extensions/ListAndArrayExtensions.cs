@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using System;
+using System.Linq;
 
 namespace Core.Extensions
 {
@@ -49,6 +50,22 @@ namespace Core.Extensions
       }
       else {
         Debug.LogWarningFormat("Trying to DoEach<{0}> on a null list", typeof(T));
+      }
+      return items;
+    }
+
+    public static List<T> DoEach<T>(this List<T> items, Action<T, int> action)
+    {
+      if (items != null)
+      {
+        var count = items.Count;
+        for (int i = 0; i < count; i++)
+        {
+          action.Invoke(items[i], i);
+        }
+      }
+      else {
+        Debug.LogWarningFormat("Trying to DoEach<{0}> on a null array", typeof(T));
       }
       return items;
     }

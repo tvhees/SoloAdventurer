@@ -7,10 +7,9 @@ namespace Core.Sets
   {
     public List<T> Items = new List<T>();
 
-    public T this[int i]
-    {
-      get { return Items[i];}
-    }
+    public T this[int i] => Items[i];
+
+    public int Count => Items.Count;
 
     public void Add(T item)
     {

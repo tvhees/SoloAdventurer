@@ -2,56 +2,75 @@ using Core.Data;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-/*
-  Cards
-*/
-[XmlRoot("CardCollection")]
-[System.Serializable]
-public class CardCollection : XmlData
-{
-  [XmlArray("Cards"), XmlArrayItem("Card")]
-  public List<CardData> Cards = new List<CardData>();
-}
+namespace SA._Data {
+  /*
+  Decks
+  */
+  [XmlRoot("PlayerData")]
+  [System.Serializable]
+  public class PlayerData : XmlData<PlayerData>
+  {
+    [XmlArray("Deck"), XmlArrayItem("Id")]
+    public List<string> Deck = new List<string>();
 
-[System.Serializable]
-public class CardData
-{
-  [XmlAttribute("id")]
-  public string Id;
-}
+    [XmlArray("Hand"), XmlArrayItem("Id")]
+    public List<string> Hand = new List<string>();
 
-/*
-  Tiles
-*/
-[XmlRoot("TileCollection")]
-[System.Serializable]
-public class TileCollection : XmlData
-{
-  [XmlArray("Tiles"), XmlArrayItem("Tile")]
-  public List<TileData> Tiles = new List<TileData>();
-}
+    [XmlArray("Discard"), XmlArrayItem("Id")]
+    public List<string> Discard = new List<string>();
+  }
 
-[System.Serializable]
-public class TileData
-{
-  [XmlAttribute("id")]
-  public string Id;
-}
+  /*
+    Cards
+  */
+  [XmlRoot("CardCollection")]
+  [System.Serializable]
+  public class CardCollection : XmlData<CardCollection>
+  {
+    [XmlArray("Cards"), XmlArrayItem("Card")]
+    public List<CardData> Cards = new List<CardData>();
+  }
 
-/*
-  Enemies
-*/
-[XmlRoot("EnemyCollection")]
-[System.Serializable]
-public class EnemyCollection : XmlData
-{
-  [XmlArray("Enemies"), XmlArrayItem("Enemy")]
-  public List<EnemyData> Enemies = new List<EnemyData>();
-}
+  [System.Serializable]
+  public class CardData
+  {
+    [XmlAttribute("id")]
+    public string Id;
+  }
 
-[System.Serializable]
-public class EnemyData
-{
-  [XmlAttribute("id")]
-  public string Id;
+  /*
+    Tiles
+  */
+  [XmlRoot("TileCollection")]
+  [System.Serializable]
+  public class TileCollection : XmlData<TileCollection>
+  {
+    [XmlArray("Tiles"), XmlArrayItem("Tile")]
+    public List<TileData> Tiles = new List<TileData>();
+  }
+
+  [System.Serializable]
+  public class TileData
+  {
+    [XmlAttribute("id")]
+    public string Id;
+  }
+
+  /*
+    Enemies
+  */
+  [XmlRoot("EnemyCollection")]
+  [System.Serializable]
+  public class EnemyCollection : XmlData<EnemyCollection>
+  {
+    [XmlArray("Enemies"), XmlArrayItem("Enemy")]
+    public List<EnemyData> Enemies = new List<EnemyData>();
+  }
+
+  [System.Serializable]
+  public class EnemyData
+  {
+    [XmlAttribute("id")]
+    public string Id;
+  }
 }
