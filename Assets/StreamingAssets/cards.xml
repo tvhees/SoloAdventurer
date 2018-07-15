@@ -1,6 +1,31 @@
 <CardCollection>
   <Cards>
-    <Card id="Card_1"></Card>
-    <Card id="Card_2"></Card>
+    <Card id="Card_1" name="Attack">
+      <Effect>Attack_2</Effect>
+    </Card>
+    <Card id="Card_2" name="Block">
+      <Effect>Block_2</Effect>
+    </Card>
+    <Card id="Card_3" name="Move">
+      <Effect>Move_2</Effect>
+    </Card>
+    <Card id="Card_4" name="Draw">
+      <Effect>Draw_2</Effect>
+    </Card>
+    <Card id="Card_5" name="Attack">
+      <Effect>Attack_2</Effect>
+    </Card>
+    <Card id="Card_6" name="Block">
+      <Effect>Block_2</Effect>
+    </Card>
+    <Card id="Card_7" name="Move">
+      <Effect>Move_2</Effect>
+    </Card>
+    <Card id="Card_8" name="Draw">
+      <Effect>Draw_2</Effect>
+    </Card>
+    <Card id="Card_9" name="Debug">
+      <Effect>Debug</Effect>
+    </Card>
   </Cards>
 </CardCollection>

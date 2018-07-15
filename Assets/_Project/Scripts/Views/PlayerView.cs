@@ -4,14 +4,18 @@ using SA._System;
 using UnityEngine;
 using System.Linq;
 using System;
+using TMPro;
+using UnityEngine.UI;
 
 namespace SA._View
 {
   public class PlayerView : MonoBehaviour
   {
     public float CardSpacing;
-    [SerializeField] CommandQueue queue;
+    [UnityEngine.Serialization.FormerlySerializedAs("queue")]
+    [SerializeField] CommandQueue _queue;
     [SerializeField] PlayerModel _player;
+    [SerializeField] CardDatabase _cardDatabase;
 
     [SerializeField] Transform _deckTransform;
     [SerializeField] Transform _handTransform;
@@ -19,12 +23,12 @@ namespace SA._View
 
     public void HandleDrawCardPressed ()
     {
-      queue.Add(new DrawCardCommand(_player));
+      _queue.Add(new DrawCardCommand(_player));
     }
 
     public void HandleDiscardCardPressed ()
     {
-      queue.Add(new DiscardCardCommand(_player));
+      _queue.Add(new DiscardCardCommand(_player));
     }
 
     void Update ()
@@ -40,6 +44,10 @@ namespace SA._View
     void ShowCard(Tuple<string, GameObject> id_card, int index)
     {
       var go = id_card.Item2;
+      var data = _cardDatabase.Card(id_card.Item1);
+      go.GetComponentInChildren<TMP_Text>().text = data.Name;
+      go.GetComponent<Button>().onClick.RemoveAllListeners();
+      go.GetComponent<Button>().onClick.AddListener(() => Debug.Log("Card Pressed"));
       go.SetActive(true);
       go.transform.localPosition = -1 * index * CardSpacing * Vector2.right;
     }

@@ -36,6 +36,12 @@ namespace SA._Data {
   {
     [XmlAttribute("id")]
     public string Id;
+
+    [XmlAttribute("name")]
+    public string Name;
+
+    [XmlElement("Effect")]
+    public string effect;
   }
 
   /*

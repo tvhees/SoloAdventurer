@@ -57,6 +57,7 @@
      <Compile Include="Assets\_Project\Scripts\Data\CardLoader.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\DataSpecifications.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\PlayerLoader.cs" />
+     <Compile Include="Assets\_Project\Scripts\Models\CardDatabase.cs" />
      <Compile Include="Assets\_Project\Scripts\Models\PlayerModel.cs" />
      <Compile Include="Assets\_Project\Scripts\Systems\CommandQueue.cs" />
      <Compile Include="Assets\_Project\Scripts\Systems\CommandSystem.cs" />
@@ -125,34 +126,38 @@
      <Compile Include="Assets\Third Party\PrefabQuickadd\Scripts\PrefabQuickaddDatabase.cs" />
      <Compile Include="Assets\Third Party\UnityEditorJunkie\SceneReference\SceneReference.cs" />
      <Compile Include="Assets\Third Party\UnityEditorJunkie\SearchableEnum\SearchableEnumAttribute.cs" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\Third Party\TextMesh Pro\Fonts\Anton OFL.txt" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\StreamingAssets\enemies.xml" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-     <None Include="Assets\Third Party\TextMesh Pro\Fonts\Oswald-Bold - OFL.txt" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\StreamingAssets\tiles.xml" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\Third Party\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\Third Party\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\Third Party\TextMesh Pro\Fonts\Bangers - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\StreamingAssets\cards.xml" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\StreamingAssets\player.xml" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
  <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -369,9 +374,6 @@
  </Reference>
  <Reference Include="DOTweenPro">
  <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Assets/Third Party/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
- </Reference>
- <Reference Include="TextMeshPro-1.0.55.2017.1.0b12">
- <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Assets/Third Party/TextMesh Pro/Plugins/TextMeshPro-1.0.55.2017.1.0b12.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/Torbjorn/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
