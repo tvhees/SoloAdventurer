@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Core.Data;
 using SA._Model;
 using UnityEngine;
 
@@ -22,7 +23,7 @@ namespace SA._System
     IEnumerator ExecuteCommandCoroutine ()
     {
       var cmd = _queue[0];
-      cmd.Execute();
+      cmd.Execute(this);
       _queue.Remove(cmd);
       if (_queue.Count == 0)
       {
@@ -35,7 +36,7 @@ namespace SA._System
 
   public interface ICommand
   {
-    bool Execute();
+    bool Execute(CommandSystem system);
   }
 
   public class DrawCardCommand : ICommand
@@ -47,9 +48,27 @@ namespace SA._System
       _player = player;
     }
 
-    public bool Execute ()
+    public bool Execute (CommandSystem system)
     {
       _player.DrawCard();
+      return true;
+    }
+  }
+
+  public class ExecuteLuaCommand : ICommand
+  {
+    string _script;
+    string _function;
+
+    public ExecuteLuaCommand (string script, string function = "describe")
+    {
+      _script = script;
+      _function = function;
+    }
+
+    public bool Execute (CommandSystem system)
+    {
+      system.GetComponent<LuaExecutor>().RunScript(_script, _function);
       return true;
     }
   }
@@ -63,7 +82,7 @@ namespace SA._System
       _player = player;
     }
 
-    public bool Execute ()
+    public bool Execute (CommandSystem system)
     {
       _player.DiscardCard();
       return true;
@@ -72,7 +91,7 @@ namespace SA._System
 
   public class DebugMessageCommand : ICommand
   {
-    public bool Execute()
+    public bool Execute(CommandSystem system)
     {
       Debug.Log("Debug command activated");
       return true;

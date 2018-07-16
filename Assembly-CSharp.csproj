@@ -57,7 +57,6 @@
      <Compile Include="Assets\_Project\Scripts\Data\CardLoader.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\DataSpecifications.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\PlayerLoader.cs" />
-     <Compile Include="Assets\_Project\Scripts\LuaHelpers\UnityLua.cs" />
      <Compile Include="Assets\_Project\Scripts\Models\CardDatabase.cs" />
      <Compile Include="Assets\_Project\Scripts\Models\PlayerModel.cs" />
      <Compile Include="Assets\_Project\Scripts\Systems\CommandQueue.cs" />
@@ -77,6 +76,8 @@
      <Compile Include="Assets\Core\Data\IDataSaver.cs" />
      <Compile Include="Assets\Core\Data\IDataStore.cs" />
      <Compile Include="Assets\Core\Data\JsonSaver.cs" />
+     <Compile Include="Assets\Core\Data\LuaDictionary.cs" />
+     <Compile Include="Assets\Core\Data\LuaLoader.cs" />
      <Compile Include="Assets\Core\Data\UnityAssetStream.cs" />
      <Compile Include="Assets\Core\Data\XmlData.cs" />
      <Compile Include="Assets\Core\Events\BaseEvent.cs" />
@@ -103,6 +104,7 @@
      <Compile Include="Assets\Core\Utilities\Singleton.cs" />
      <Compile Include="Assets\Core\Utilities\TimedBehaviour.cs" />
      <Compile Include="Assets\Core\Utilities\Timer.cs" />
+     <Compile Include="Assets\Core\Utilities\UnityLua.cs" />
      <Compile Include="Assets\Core\Utilities\VectorHelper.cs" />
      <Compile Include="Assets\Core\Variables\Base\GenericVariable.cs" />
      <Compile Include="Assets\Core\Variables\Base\GenericVariableDisplayUI.cs" />

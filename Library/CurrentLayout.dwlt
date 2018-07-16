@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 137
+  controlID: 72
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -131,10 +131,10 @@ MonoBehaviour:
     y: 0
     width: 885
     height: 771
-  m_MinSize: {x: 202, y: 442}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 202, y: 421}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 116
+  controlID: 31
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -182,8 +182,8 @@ MonoBehaviour:
     y: 290
     width: 885
     height: 481
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 138
+  controlID: 86
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -222850
+  m_LastSelectedObjectID: -51932
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -898,9 +898,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e99fcff
-    m_LastClickedID: -222850
-    m_ExpandedIDs: f0fbffff00000000b8100000c41000000811000022110000
+    m_SelectedIDs: 2435ffff
+    m_LastClickedID: -51932
+    m_ExpandedIDs: f0fbffff000000004a110000ca110000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -961,20 +961,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/StreamingAssets
+    - Assets/Core/Utilities
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/StreamingAssets
+  - Assets/Core/Utilities
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Torbjorn\Documents\Jam games\SoloAdventurer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 46100000
-    m_LastClickedID: 4166
-    m_ExpandedIDs: 00000000720c0000540d0000ac0d00004a0e0000ba0e0000541000001a3200001c3200001e3200002032000022320000243200001439000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 104}
+    m_SelectedIDs: 0e0f0000
+    m_LastClickedID: 3854
+    m_ExpandedIDs: 00000000c20c0000ae0d0000fc0d0000a00e00000c0f00000e0f0000280f00007a0f00008810000096100000a4320000a6320000a8320000aa320000ac320000ae320000b032000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1002,7 +1002,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000720c0000840c0000540d0000ac0d00004a0e0000ba0e0000260f0000541000001a3200001c3200001e320000203200002232000024320000
+    m_ExpandedIDs: 00000000c20c0000ae0d0000a00e00000c0f0000280f000096100000a4320000a6320000a8320000aa320000ac320000ae320000b0320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: de1d0000e21b0000e01b00004e2d0000001d0000fc1b00002c1d0000201d0000361d0000a81f0000fe040000341d00002e20000066a1ffffa430ffff5cfcfcff36d1ffff5063ffff24050000ba1d0000b81d000090e2ffffb41e00002e050000622400008e2f00000e1d00004c1e0000c8200000f0200000ac16feff0efdfdff200400005c050000022100005a20000012a9feff4e1c00003e51feff441c000084220000601c00005e1c0000da0400006e1c00008a220000a41d00002675f0ff1e75f0ffb27cedffbac90200c81e00008c1c0000ca1e0000f4780000d81e0000901c0000d41e0000ee040000ae1c0000fe1c0000f00400007ca0faff6a200000821d00008c1e0000fa1f00001a1d000002200000042000000a20000000000000602c0000542c00005a2c000070c4fdffa22900006e220000a80400005c5effffec5b0000ac040000d03b00007a02ffffcc290000ac2a00006e080000560e0000be240000de230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

@@ -47,7 +47,7 @@ namespace SA._View
       var data = _cardDatabase.Card(id_card.Item1);
       go.GetComponentInChildren<TMP_Text>().text = data.Name;
       go.GetComponent<Button>().onClick.RemoveAllListeners();
-      go.GetComponent<Button>().onClick.AddListener(() => Debug.Log("Card Pressed"));
+      go.GetComponent<Button>().onClick.AddListener(() => _queue.Add(new ExecuteLuaCommand(data.effect)));
       go.SetActive(true);
       go.transform.localPosition = -1 * index * CardSpacing * Vector2.right;
     }
