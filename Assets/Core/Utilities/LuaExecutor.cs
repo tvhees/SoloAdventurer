@@ -4,6 +4,7 @@ using UnityEngine;
 using MoonSharp.Interpreter;
 using System.Linq;
 using System.IO;
+using SA._Lua;
 
 namespace Core.Utilities
 {
@@ -43,13 +44,16 @@ namespace Core.Utilities
 
 		public void RunScript(string scriptName)
 		{
+			UserData.RegisterAssembly();
+
       Debug.LogFormat("Running script '{0}'", scriptName);
 
 			Script script = new Script();
+			// TODO: Extract this function from the Core
+			script.Globals["unity"] = new UnityLua();
 			script.DoString(scripts[scriptName]);
 			DynValue msgFunc = script.Globals.Get("debugString");
-			DynValue msg = script.Call(msgFunc);
-			Debug.Log(msg);
+			script.Call(msgFunc);
 		}
 	}
 }

@@ -57,6 +57,7 @@
      <Compile Include="Assets\_Project\Scripts\Data\CardLoader.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\DataSpecifications.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\PlayerLoader.cs" />
+     <Compile Include="Assets\_Project\Scripts\LuaHelpers\UnityLua.cs" />
      <Compile Include="Assets\_Project\Scripts\Models\CardDatabase.cs" />
      <Compile Include="Assets\_Project\Scripts\Models\PlayerModel.cs" />
      <Compile Include="Assets\_Project\Scripts\Systems\CommandQueue.cs" />
