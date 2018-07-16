@@ -76,6 +76,7 @@
      <Compile Include="Assets\Core\Data\IDataSaver.cs" />
      <Compile Include="Assets\Core\Data\IDataStore.cs" />
      <Compile Include="Assets\Core\Data\JsonSaver.cs" />
+     <Compile Include="Assets\Core\Data\UnityAssetStream.cs" />
      <Compile Include="Assets\Core\Data\XmlData.cs" />
      <Compile Include="Assets\Core\Events\BaseEvent.cs" />
      <Compile Include="Assets\Core\Events\GameEvent.cs" />
@@ -91,6 +92,7 @@
      <Compile Include="Assets\Core\Sets\Vector3Set.cs" />
      <Compile Include="Assets\Core\Utilities\HexPoint.cs" />
      <Compile Include="Assets\Core\Utilities\IntVector2.cs" />
+     <Compile Include="Assets\Core\Utilities\LuaExecutor.cs" />
      <Compile Include="Assets\Core\Utilities\PersistentSingleton.cs" />
      <Compile Include="Assets\Core\Utilities\Pool.cs" />
      <Compile Include="Assets\Core\Utilities\Poolable.cs" />
@@ -126,20 +128,19 @@
      <Compile Include="Assets\Third Party\PrefabQuickadd\Scripts\PrefabQuickaddDatabase.cs" />
      <Compile Include="Assets\Third Party\UnityEditorJunkie\SceneReference\SceneReference.cs" />
      <Compile Include="Assets\Third Party\UnityEditorJunkie\SearchableEnum\SearchableEnumAttribute.cs" />
+     <None Include="Assets\StreamingAssets\Xml\cards.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\StreamingAssets\enemies.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\StreamingAssets\tiles.xml" />
+     <None Include="Assets\StreamingAssets\Xml\player.xml" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\StreamingAssets\Xml\tiles.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\StreamingAssets\cards.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\StreamingAssets\player.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -147,17 +148,18 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\StreamingAssets\Xml\enemies.xml" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
  <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Torbjorn/Documents/Jam games/SoloAdventurer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

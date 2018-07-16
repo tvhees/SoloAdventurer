@@ -16,35 +16,28 @@ namespace Core.Data
 			}
 		}
 	
-		public static T Load(string path)
+		public static T Load(string fileName)
 		{
 			var serializer = new XmlSerializer(typeof(T));
-			using(var stream = new FileStream(path, FileMode.Open))
+			using(var stream = new UnityAssetStream(new []{"Xml", fileName + ".xml"}))
 			{
 				return serializer.Deserialize(stream) as T;
 			}
 		}
 
-		public static T LoadStreamingAssets (string file)
+		public static T LoadStreamingAssets (string fileName)
 		{
-			var path = System.IO.Path.Combine(Application.streamingAssetsPath, file + ".xml");
+			//var path = System.IO.Path.Combine(Application.streamingAssetsPath, "Xml", file + ".xml");
 			try
 			{
-				return Load(path);		
+				return Load(fileName);		
 			}
 			catch(DirectoryNotFoundException e)
 			{
-				if (path.Contains("StreamingAssets"))
-				{
-					Debug.LogErrorFormat("{0} Check that the Assets\\StreamingAssets folder exists and is correctly named.\n{1}",
-						e.Message, e.StackTrace);
-					
-					return default(T);
-				}
-				else
-				{
-					throw;
-				}
+				Debug.LogErrorFormat("{0} Check that the Assets\\StreamingAssets folder exists and is correctly named.\n{1}",
+					e.Message, e.StackTrace);
+				
+				return default(T);
 			}
 			catch (System.Exception)
 			{

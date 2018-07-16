@@ -1,0 +1,6 @@
+<EnemyCollection>
+  <Enemies>
+    <Enemy id="Enemy_1"></Enemy>
+    <Enemy id="Enemy_2"></Enemy>
+  </Enemies>
+</EnemyCollection>
