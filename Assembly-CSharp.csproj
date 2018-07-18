@@ -57,6 +57,7 @@
      <Compile Include="Assets\_Project\Scripts\Data\CardLoader.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\DataSpecifications.cs" />
      <Compile Include="Assets\_Project\Scripts\Data\PlayerLoader.cs" />
+     <Compile Include="Assets\_Project\Scripts\LuaHelpers\LuaRegister.cs" />
      <Compile Include="Assets\_Project\Scripts\Models\CardDatabase.cs" />
      <Compile Include="Assets\_Project\Scripts\Models\PlayerModel.cs" />
      <Compile Include="Assets\_Project\Scripts\Systems\CommandQueue.cs" />
@@ -77,6 +78,7 @@
      <Compile Include="Assets\Core\Data\IDataStore.cs" />
      <Compile Include="Assets\Core\Data\JsonSaver.cs" />
      <Compile Include="Assets\Core\Data\LuaDictionary.cs" />
+     <Compile Include="Assets\Core\Data\LuaExecutor.cs" />
      <Compile Include="Assets\Core\Data\LuaLoader.cs" />
      <Compile Include="Assets\Core\Data\UnityAssetStream.cs" />
      <Compile Include="Assets\Core\Data\XmlData.cs" />
@@ -94,7 +96,6 @@
      <Compile Include="Assets\Core\Sets\Vector3Set.cs" />
      <Compile Include="Assets\Core\Utilities\HexPoint.cs" />
      <Compile Include="Assets\Core\Utilities\IntVector2.cs" />
-     <Compile Include="Assets\Core\Utilities\LuaExecutor.cs" />
      <Compile Include="Assets\Core\Utilities\PersistentSingleton.cs" />
      <Compile Include="Assets\Core\Utilities\Pool.cs" />
      <Compile Include="Assets\Core\Utilities\Poolable.cs" />

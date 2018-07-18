@@ -1,12 +1,14 @@
 using System.Collections.Generic;
+using MoonSharp.Interpreter;
 using SA._Data;
+using SA._Lua;
 using UnityEngine;
 
 namespace SA._Model
 {
   [CreateAssetMenu]
   [System.Serializable]
-  public class PlayerModel : ScriptableObject
+  public class PlayerModel : ScriptableObject, ILuaClass
   {
     public List<string> deck;
     public List<string> hand;
@@ -17,6 +19,17 @@ namespace SA._Model
       deck = data.Deck;
       hand = data.Hand;
       discard = data.Discard;
+    }
+
+    public void RegisterToUserData ()
+    {
+      UserData.RegisterProxyType<PlayerModelProxy, PlayerModel>(r => new PlayerModelProxy(r));
+    }
+
+    public void AddToScriptGlobals (Script script)
+    {
+      var playerLua = UserData.Create(this);
+      script.Globals.Set("player", playerLua);
     }
 
     public void DrawCard ()
@@ -31,6 +44,21 @@ namespace SA._Model
       var id = hand[0];
       hand.Remove(id);
       discard.Add(id);
+    }
+  }
+
+  public class PlayerModelProxy : LuaClassProxy<PlayerModel>
+  {
+    public PlayerModelProxy(PlayerModel target) : base(target){}
+
+    public override void RegisterToUserData()
+    {
+      UserData.RegisterProxyType<PlayerModelProxy, PlayerModel>(r => new PlayerModelProxy(r));
+    }
+
+    public void DrawCard()
+    {
+      target.DrawCard();
     }
   }
 }
