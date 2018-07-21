@@ -26,8 +26,6 @@ namespace SA._Lua
     {
       var unity = UserData.Create(new UnityLua());
       script.Globals.Set("unity", unity);
-
-      _playerModel.AddToScriptGlobals(script);
     }
   }
 

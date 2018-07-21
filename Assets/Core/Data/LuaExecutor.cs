@@ -13,6 +13,17 @@ namespace Core.Data
     [SerializeField]
     private LuaDictionary _scriptDictionary;
 
+		private ILuaRegister _luaRegister;
+
+		void Start ()
+		{
+			_luaRegister = GetComponent<ILuaRegister>();
+			if (_luaRegister == null)
+			{
+				UserData.RegisterAssembly();
+			}
+		}
+
 		public void DescribeScript(string scriptName)
 		{
 			RunScript(scriptName, "describe");
@@ -20,22 +31,30 @@ namespace Core.Data
 
 		public void RunScript(string scriptName, string funcName)
 		{
-			var luaRegister = GetComponent<ILuaRegister>();
-			if (luaRegister != null)
-			{
-				luaRegister.RegisterTypesToUserData();
-			} else {
-				UserData.RegisterAssembly();
-			}
 			Script script = new Script();
-			if (luaRegister != null)
+
+			if (_luaRegister != null)
 			{
-				luaRegister.AddObjectsToScriptGlobals(script);
+				_luaRegister.AddObjectsToScriptGlobals(script);
 			}
-			script.Globals["unity"] = new UnityLua();
+			
 			script.DoString(_scriptDictionary.Script(scriptName));
 			DynValue func = script.Globals.Get(funcName);
 			script.Call(func);
+		}
+
+		public void RunScript(string scriptName, string funcName, Dictionary<string, object> args)
+		{
+			Script script = new Script();
+
+			if (_luaRegister != null)
+			{
+				_luaRegister.AddObjectsToScriptGlobals(script);
+			}
+			
+			script.DoString(_scriptDictionary.Script(scriptName));
+			DynValue func = script.Globals.Get(funcName);
+			script.Call(func, args);
 		}
 	}
 

@@ -59,16 +59,18 @@ namespace SA._System
   {
     string _script;
     string _function;
+    Dictionary<string, object> _args;
 
-    public ExecuteLuaCommand (string script, string function = "describe")
+    public ExecuteLuaCommand (string script, string function = "describe", Dictionary<string, object> args = null)
     {
       _script = script;
       _function = function;
+      _args = args;
     }
 
     public bool Execute (CommandSystem system)
     {
-      system.GetComponent<LuaExecutor>().RunScript(_script, _function);
+      system.GetComponent<LuaExecutor>().RunScript(_script, _function, _args);
       return true;
     }
   }
@@ -76,15 +78,16 @@ namespace SA._System
   public class DiscardCardCommand : ICommand
   {
     PlayerModel _player;
+    string id;
 
-    public DiscardCardCommand (PlayerModel player)
+    public DiscardCardCommand (PlayerModel player, string id)
     {
       _player = player;
     }
 
     public bool Execute (CommandSystem system)
     {
-      _player.DiscardCard();
+      _player.DiscardCard(id);
       return true;
     }
   }
