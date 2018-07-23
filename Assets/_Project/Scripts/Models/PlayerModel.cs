@@ -26,6 +26,7 @@ namespace SA._Model
       deck = data.Deck;
       hand = data.Hand;
       discard = data.Discard;
+      inPlay = data.InPlay;
 
       attack = 0;
       block = 0;

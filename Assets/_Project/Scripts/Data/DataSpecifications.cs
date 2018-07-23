@@ -18,6 +18,8 @@ namespace SA._Data {
 
     [XmlArray("Discard"), XmlArrayItem("Id")]
     public List<string> Discard = new List<string>();
+
+    public List<string> InPlay = new List<string>();
   }
 
   /*

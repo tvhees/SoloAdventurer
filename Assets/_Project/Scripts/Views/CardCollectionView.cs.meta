@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4ebe3d06add0ba94b816946ffd4f473c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _cardViewPrefab: {fileID: 1657844877900974, guid: 2d2517111b6378c4fac8e36c42d369d9,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

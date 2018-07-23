@@ -62,6 +62,7 @@
      <Compile Include="Assets\_Project\Scripts\Models\PlayerModel.cs" />
      <Compile Include="Assets\_Project\Scripts\Systems\CommandQueue.cs" />
      <Compile Include="Assets\_Project\Scripts\Systems\CommandSystem.cs" />
+     <Compile Include="Assets\_Project\Scripts\Views\CardCollectionView.cs" />
      <Compile Include="Assets\_Project\Scripts\Views\PlayerView.cs" />
      <Compile Include="Assets\Core\Components\KeyDownEventTrigger.cs" />
      <Compile Include="Assets\Core\Components\LifecycleEventTrigger.cs" />
@@ -87,6 +88,7 @@
      <Compile Include="Assets\Core\Events\GameEventListener.cs" />
      <Compile Include="Assets\Core\Events\GameObjectEvent.cs" />
      <Compile Include="Assets\Core\Events\GameObjectEventListener.cs" />
+     <Compile Include="Assets\Core\Extensions\GameObjectExtensions.cs" />
      <Compile Include="Assets\Core\Extensions\IntExtensions.cs" />
      <Compile Include="Assets\Core\Extensions\ListAndArrayExtensions.cs" />
      <Compile Include="Assets\Core\Extensions\VectorExtensions.cs" />
@@ -94,6 +96,7 @@
      <Compile Include="Assets\Core\Pooling\PoolSet.cs" />
      <Compile Include="Assets\Core\Sets\RuntimeSet.cs" />
      <Compile Include="Assets\Core\Sets\Vector3Set.cs" />
+     <Compile Include="Assets\Core\Utilities\fp.cs" />
      <Compile Include="Assets\Core\Utilities\HexPoint.cs" />
      <Compile Include="Assets\Core\Utilities\IntVector2.cs" />
      <Compile Include="Assets\Core\Utilities\PersistentSingleton.cs" />
